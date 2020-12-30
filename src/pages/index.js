@@ -21,9 +21,9 @@ const IndexPage = ({ data }) => {
                   <span className="block xl:inline">
                     Hi{" "}
                     <span role="img" aria-label="wave">
-                      👋
+                      👋🏽
                     </span>
-                    , I'm{" "}
+                    <br /> I'm{" "}
                   </span>
                   <span className="block text-orange-300 xl:inline">
                     Gordon!
