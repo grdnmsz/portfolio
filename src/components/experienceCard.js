@@ -8,7 +8,7 @@ const ExperienceCard = ({
 }) => {
   return (
     <div className="bg-headerColor rounded-xl">
-      <div className="py-6 mb-10 text-center">
+      <div className="py-6 px-6 mb-10 text-center">
         <div className="text-2xl font-bold mb-4">{title}</div>
         <span className="text-sm">
           {dates}
@@ -27,7 +27,7 @@ const ExperienceCard = ({
       </div>
 
       <button className="w-full rounded-b-xl text-lg h-16 hover:text-gray-800 hover:bg-orange-400 font-extrabold ">
-        Learn more
+        <a href="/about">Learn more</a>
       </button>
     </div>
   );
