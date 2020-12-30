@@ -23,22 +23,22 @@ const IndexPage = ({ data }) => {
                     <span role="img" aria-label="wave">
                       👋🏽
                     </span>
-                    <br /> I'm{" "}
-                  </span>
-                  <span className="block text-orange-300 xl:inline">
-                    Gordon!
+                    <br />
+                    I'm{" "}
+                    <span className="block text-orange-300 inline">
+                      Gordon!
+                    </span>
                   </span>
                 </h1>
                 <p className="mt-3 text-base text-gray-200 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                   I’m a Software Engineer looking for new opportunities in Full
                   Stack development. Currently unemployed, I’m available and
                   motivated to take on creative and challenging missions.
-                  aliqua.
                 </p>
                 <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                   <div className="rounded-md shadow">
                     <a
-                      href="/"
+                      href="mailto:gordonmes@gmail.com"
                       className="w-full flex items-center justify-center px-8 py-3 text-base font-medium rounded-lg text-gray-200 bg-headerColor hover:text-gray-800 hover:bg-orange-400 md:py-4 md:text-lg md:px-10"
                     >
                       Get in touch
@@ -63,7 +63,7 @@ const IndexPage = ({ data }) => {
 
             <div className="grid md:grid-cols-3 gap-8 m-5 max-w-5xl m-auto">
               {nodes.map((node) => {
-                return <ExperienceCard node={node} />;
+                return <ExperienceCard key={node.dates} node={node} />;
               })}
             </div>
           </main>

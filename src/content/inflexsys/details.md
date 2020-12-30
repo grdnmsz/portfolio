@@ -5,15 +5,15 @@ company: InfleXsys
 url: https://inflexsys.com
 tag: details
 date: 2017-11
+jobTitle: Software Engineer
 ---
 
-## Software Engineer
-### Tasks
+#### Tasks
 
 - Developed new features and fixed critical bugs on our clients’ mobile applications such as Barclays/Milléis. Providing in-time delivery through continuous integration.
 - Took part in R&D efforts on an IoT project designed to keep the disabled community away from dangerous situations. Was in charge of setting up the data collection infrastructure.
 
-### Environment
+#### Environment
 
-- Ionic, ReactJS, Python
+- Ionic, React, Python
 - Debian, Git, Jira, InfluxDB

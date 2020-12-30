@@ -37,7 +37,10 @@ const Layout = ({ children }) => {
       <footer className="bg-backgroundColor text-gray-300 px-6 lg:px-8 py-12">
         <div className="max-w-screen-xl mx-auto flex flex-col items-center ">
           <div className="flex items-center space-x-2">
-            <a href="https://github.com/grdnmsz" className="hover:text-gray-100">
+            <a
+              href="https://github.com/grdnmsz"
+              className="hover:text-orange-100"
+            >
               <span className="sr-only">Github</span>
               <svg
                 className="h-6 w-6"
@@ -52,7 +55,10 @@ const Layout = ({ children }) => {
                 />
               </svg>
             </a>
-            <a href="https://www.linkedin.com/in/gordon-meszaros-530649114/" className="hover:text-gray-100">
+            <a
+              href="https://www.linkedin.com/in/gordon-meszaros-530649114/"
+              className="hover:text-orange-100"
+            >
               <span className="sr-only">LinkedIn</span>
               <svg
                 className="h-6 w-6"

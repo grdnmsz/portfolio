@@ -5,14 +5,11 @@ company: PEL - Dublin City University
 url: https://www.eeng.dcu.ie/~pel/
 tag: details
 date: 2016-06
+jobTitle: Research Intern
 ---
-
-## Research Intern
-### Tasks
-
+#### Tasks
 - In charge of porting a testbed running on Windows to Raspberry Pi. Rewrote several drivers for multimedia devices, synchronised for augmented reality video clips. 
 
-### Environment
-
+#### Environment
 - C, C#, Shell
 - Raspberry Pi
