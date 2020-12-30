@@ -9,7 +9,7 @@ const ExperienceCard = ({
   return (
     <div className="bg-headerColor rounded-xl">
       <div className="py-6 mb-10 text-center">
-        <div className="text-2xl font-bold mb-4">InfleXsys</div>
+        <div className="text-2xl font-bold mb-4">{title}</div>
         <span className="text-sm">
           {dates}
           <br />
