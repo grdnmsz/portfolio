@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font: 112.5%/1.45em;
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+
+body {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu;
+  background-color: #335355;
+}
+
+h1 {
+  margin-bottom: 1.45rem;
+  font-weight: bold;
+  font-size: 2.25rem;
+}

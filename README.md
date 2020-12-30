@@ -3,9 +3,12 @@
   <a href="https://www.gatsbyjs.com">
     <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
   </a>
+  <a href="">
+    <img alt="Tailwindcss" src="https://imgur.com/a/Ke61gFE" width="60" />
+  </a>
 </p>
 <h1 align="center">
-  Gatsby's default starter
+  Portfolio project using Gatsby and Tailwind CSS
 </h1>
 
 Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
