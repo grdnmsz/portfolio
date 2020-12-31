@@ -52,9 +52,9 @@ const Header = () => {
           <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex-shrink-0 flex items-center">
               <img
-                className="block h-8 w-auto"
-                src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
-                alt="Workflow"
+                className="block h-10 w-auto"
+                src={"https://i.imgur.com/i4cAWW7.png"}
+                alt="PP"
               />
             </div>
             <div className="hidden sm:block sm:ml-6">
