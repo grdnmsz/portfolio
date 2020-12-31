@@ -82,7 +82,7 @@ const Header = () => {
         className={`${isOn ? "block" : "hidden"} sm:hidden`}
         aria-checked={isOn}
       >
-        <div className="px-2 pt-3 pb-3 space-y-1">
+        <div className="px-2 pt-2 pb-3 space-y-1">
           <Link
             to={"/"}
             className="hover:bg-teal-800 text-gray-200 px-3 py-2 block rounded-md text-sm font-medium"
