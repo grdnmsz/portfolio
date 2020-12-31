@@ -11,16 +11,18 @@ const About = ({ data }) => {
   return (
     <Layout>
       <SEO title="About me" />
-      <div className="py-12 bg-white text-gray-200">
+      <div className="py-12 text-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl">
               About Me
             </p>
-            <p className="mt-4 border  rounded-xl py-6 px-6 text-xl lg:mx-auto">
-              I hold a MEng in Electronics, in addition to having experience in
-              various domains, from fundamental sciences and applied research,
-              to professional mobile development{" "}
+            <p className="mt-4 bg-headerColor rounded-xl py-6 px-6 text-lg lg:mx-auto">
+              I hold a{" "}
+              <span className="block text-orange-200 inline">MEng</span> in
+              Electronics, in addition to having experience in various domains,
+              from fundamental sciences and applied research, to professional
+              mobile development{" "}
               <span role="img" aria-label="wave">
                 📱
               </span>
@@ -28,21 +30,29 @@ const About = ({ data }) => {
               <br />2 years ago, I took my focus off Computer Science to be more
               involved in creative projects such as music composition and
               filmmaking. I’ve since been growing as a Full Stack Engineer with
-              React and Node.js expertise{" "}
+              <span className="block text-orange-200 inline">
+                {" "}
+                React
+              </span> and{" "}
+              <span className="block text-orange-200 inline">Node.js</span>{" "}
+              expertise{" "}
               <span role="img" aria-label="wave">
                 💻
               </span>{" "}
-              , eager to take on challenging missions as well as to keep on
-              improving my skills.
+              , eager to take on{" "}
+              <span className="block text-orange-200 inline">
+                challenging missions
+              </span>{" "}
+              as well as to keep on improving my skills.
             </p>
           </div>
 
           <div className="mt-10">
-            <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-4 md:gap-x-8 md:gap-y-10">
+            <div className="space-y-16 md:space-y-0 md:grid md:grid-cols-4 md:gap-y-16">
               {nodes.map((node) => {
                 return <ExperienceDetails key={node.company} node={node} />;
               })}
-            </dl>
+            </div>
           </div>
         </div>
       </div>

@@ -9,7 +9,7 @@ const ExperienceDetails = ({
   },
 }) => {
   return (
-    <>
+    <React.Fragment>
       <div className="flex">
         <div className="ml-4 hidden md:block">
           <dt className="text-lg leading-6 font-extrabold font-medium text-orange-300">
@@ -20,9 +20,9 @@ const ExperienceDetails = ({
           <dd className="text-sm">{location}</dd>
         </div>
       </div>
-  
-      <div className="flex col-span-3">
-        <div className="ml-4">
+
+      <div className="flex col-span-3 ">
+        <div className="ml-4 ">
           <p className="text-lg md:hidden leading-6 font-extrabold text-orange-300">
             {company}
           </p>
@@ -36,7 +36,7 @@ const ExperienceDetails = ({
           />
         </div>
       </div>
-    </>
+    </React.Fragment>
   );
 };
 
