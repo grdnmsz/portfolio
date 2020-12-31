@@ -17,7 +17,7 @@ const About = ({ data }) => {
             <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl">
               About Me
             </p>
-            <p className="mt-4 bg-headerColor rounded-xl py-6 px-6 text-xs sm:text-base lg:text-lg lg:mx-auto">
+            <p className="mt-4 bg-headerColor rounded-xl py-6 px-6 text-sm md:text-base lg:mx-auto">
               I hold a{" "}
               <span className="block text-orange-200 inline">MEng</span> in
               Electronics, in addition to having experience in various domains,
@@ -28,10 +28,10 @@ const About = ({ data }) => {
               </span>
               .
               <br />
-              <br className="md:hidden" />
-              2 years ago, I took my focus off Computer Science to be more
-              involved in creative projects such as music composition and
-              filmmaking. I’ve since been growing as a Full Stack Engineer with
+              <br className="md:hidden" />2 years ago, I took my focus off
+              Computer Science to be more involved in creative projects such as
+              music composition and filmmaking. I’ve since been growing as a
+              Full Stack Engineer with
               <span className="block text-orange-200 inline">
                 {" "}
                 React
