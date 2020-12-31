@@ -53,7 +53,7 @@ const Header = () => {
             <div className="flex-shrink-0 flex items-center">
               <img
                 className="block h-10 w-auto"
-                src={"https://i.imgur.com/i4cAWW7.png"}
+                src={"https://i.imgur.com/YzWrHZa.png"}
                 alt="PP"
               />
             </div>
