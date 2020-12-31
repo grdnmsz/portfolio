@@ -27,7 +27,9 @@ const About = ({ data }) => {
                 📱
               </span>
               .
-              <br />2 years ago, I took my focus off Computer Science to be more
+              <br />
+              <br className="md:hidden" />
+              2 years ago, I took my focus off Computer Science to be more
               involved in creative projects such as music composition and
               filmmaking. I’ve since been growing as a Full Stack Engineer with
               <span className="block text-orange-200 inline">
