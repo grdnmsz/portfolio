@@ -1,3 +1,4 @@
+import { Link } from "gatsby";
 import React from "react";
 
 const ExperienceCard = ({
@@ -27,9 +28,9 @@ const ExperienceCard = ({
       </div>
 
       <button className="w-full rounded-b-xl text-lg h-16 hover:text-gray-800 hover:bg-orange-400 font-extrabold ">
-        <a className="w-full flex justify-center" href="/about">
+        <Link className="w-full flex justify-center" to="/about">
           Learn more
-        </a>
+        </Link>
       </button>
     </div>
   );
