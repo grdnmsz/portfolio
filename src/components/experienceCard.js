@@ -27,7 +27,9 @@ const ExperienceCard = ({
       </div>
 
       <button className="w-full rounded-b-xl text-lg h-16 hover:text-gray-800 hover:bg-orange-400 font-extrabold ">
-        <a href="/about">Learn more</a>
+        <a className="w-full flex justify-center" href="/about">
+          Learn more
+        </a>
       </button>
     </div>
   );
