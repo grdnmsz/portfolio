@@ -61,7 +61,7 @@ const IndexPage = ({ data }) => {
               Where did I work ?
             </h3>
 
-            <div className="grid md:grid-cols-3 gap-8 m-5 max-w-5xl m-auto">
+            <div className="grid lg:grid-cols-3 gap-8 m-5 max-w-5xl m-auto">
               {nodes.map((node) => {
                 return <ExperienceCard key={node.dates} node={node} />;
               })}
