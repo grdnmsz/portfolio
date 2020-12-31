@@ -19,7 +19,7 @@ const ExperienceCard = ({
         </span>
 
         <div
-          className="text-sm"
+          className="text-sm sm:px-32 md:px-52 lg:px-0"
           dangerouslySetInnerHTML={{
             __html: html,
           }}
