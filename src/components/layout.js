@@ -71,7 +71,7 @@ const Layout = ({ children }) => {
             </a>
           </div>
           <div className="text-sm mt-4">
-            &copy;2020 Gordon Meszaros. All rights reserved.
+            {new Date().getFullYear()} • &copy;Gordon Meszaros 
           </div>
         </div>
       </footer>
