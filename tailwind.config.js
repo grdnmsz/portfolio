@@ -13,6 +13,7 @@ module.exports = {
       teal: colors.teal,
       purple: colors.purple,
       orange: colors.orange,
+      cyan: colors.cyan,
       headerColor: "#1e3b3b",
       backgroundColor: "#335355",
     },
