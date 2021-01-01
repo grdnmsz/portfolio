@@ -1,5 +1,5 @@
 ---
-dates: May. 2017 - Sept. 2017
+dates: May 2017 - Sept. 2017
 location: Bordeaux, France
 company: Labri - Bordeaux University
 url: https://www.labri.fr
