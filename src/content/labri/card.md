@@ -1,6 +1,6 @@
 ---
 title: Research Intern
-dates: May. 2017 - Sept. 2017
+dates: May 2017 - Sept. 2017
 location: Bordeaux, France 🇫🇷
 description: labri
 tag: card

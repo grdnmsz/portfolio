@@ -1,5 +1,5 @@
 ---
-dates: June. 2016 - Sept. 2016
+dates: June 2016 - Sept. 2016
 location: Dublin, Ireland
 company: PEL - Dublin City University
 url: https://www.eeng.dcu.ie/~pel/

@@ -1,6 +1,6 @@
 ---
 title: Research Intern
-dates: June. 2016 - Sept. 2016
+dates: June 2016 - Sept. 2016
 location: Dublin, Ireland 🇮🇪
 tag: card
 date: 2016-06
