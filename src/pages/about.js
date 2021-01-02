@@ -51,8 +51,8 @@ const About = ({ data }) => {
 
           <div className="mt-10">
             <div className="space-y-16 md:space-y-0 md:grid md:grid-cols-4 md:gap-y-16">
-              {nodes.map((node) => {
-                return <ExperienceDetails key={node.company} node={node} />;
+              {nodes.map((node, i) => {
+                return <ExperienceDetails key={i} node={node} />;
               })}
             </div>
           </div>

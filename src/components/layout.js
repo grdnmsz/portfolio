@@ -41,7 +41,7 @@ const Layout = ({ children }) => {
               href="https://github.com/grdnmsz"
               className="hover:text-orange-100"
             >
-              <span className="sr-only">Github</span>
+              <span className="sr-only">Personal Github profile</span>
               <svg
                 className="h-6 w-6"
                 aria-hidden="true"
@@ -59,7 +59,7 @@ const Layout = ({ children }) => {
               href="https://www.linkedin.com/in/gordon-meszaros-530649114/"
               className="hover:text-orange-100"
             >
-              <span className="sr-only">LinkedIn</span>
+              <span className="sr-only">Personal linkedin profile</span>
               <svg
                 className="h-6 w-6"
                 aria-hidden="true"
@@ -77,7 +77,7 @@ const Layout = ({ children }) => {
                 href="https://www.gatsbyjs.com"
                 className="hover:text-purple-400"
               >
-                <span className="sr-only">Gatsby</span>
+                <span className="sr-only">External link to Gatsby homepage</span>
                 <svg
                   className="h-4 w-4"
                   aria-hidden="true"
@@ -89,7 +89,7 @@ const Layout = ({ children }) => {
               </a>
               <div>{" & "}</div>
               <a href="https://tailwindcss.com" className="hover:text-cyan-400">
-                <span className="sr-only">Tailwindcss</span>
+                <span className="sr-only">Tailwindcss homepage</span>
                 <svg
                   className="h-5 w-5"
                   aria-hidden="true"
