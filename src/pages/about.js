@@ -13,11 +13,11 @@ const About = ({ data }) => {
       <SEO title="About me" />
       <div className="py-12 text-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl">
+          <div className="text-left">
+            <p className="mt-2 text-3xl text-center leading-8 font-extrabold tracking-tight sm:text-4xl">
               About Me
             </p>
-            <p className="mt-4 bg-headerColor rounded-xl py-6 px-6 text-sm md:text-base lg:mx-auto">
+            <p className="mt-4 bg-headerColor rounded-xl py-6 px-6 text-sm md:text-base lg:mx-auto ">
               I hold a{" "}
               <span className="block text-orange-200 inline">MEng</span> in
               Electronics, in addition to having experience in various domains,
@@ -28,7 +28,7 @@ const About = ({ data }) => {
               </span>
               .
               <br />
-              <br className="md:hidden" />2 years ago, I took my focus off
+              <br className="" />2 years ago, I took my focus off
               Computer Science to be more involved in creative projects such as
               music composition and filmmaking. I’ve since been growing as a
               Full Stack Engineer with
