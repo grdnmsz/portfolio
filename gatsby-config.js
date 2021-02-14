@@ -21,7 +21,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: process.env.GANALYT_TRACKING_ID
+        trackingIds: [process.env.GANALYT_TRACKING_ID],
       },
     },
     {
