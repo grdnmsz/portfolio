@@ -82,9 +82,11 @@ const query = graphql`
   }
 `;
 
-export default (props) => (
+const staticQuery = (props) => (
   <StaticQuery
     query={query}
     render={(data) => <About data={data} {...props} />}
   />
 );
+
+export default staticQuery

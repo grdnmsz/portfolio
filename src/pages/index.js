@@ -3,11 +3,11 @@ import { graphql, StaticQuery, Link } from "gatsby";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-
 import ExperienceCard from "../components/experienceCard";
 
-const IndexPage = ({ data }) => {
-  const { nodes } = data.allMarkdownRemark;
+const IndexPage = ({ data: { allMarkdownRemark, allFile } }) => {
+  const { nodes } = allMarkdownRemark;
+  const urlResume = allFile.edges[0].node.publicURL;
 
   return (
     <Layout>
@@ -45,12 +45,14 @@ const IndexPage = ({ data }) => {
                     </a>
                   </div>
                   <div className="mt-3 sm:mt-0 sm:ml-3">
-                    <Link
-                      to="/about"
-                      className="w-full flex items-center justify-center px-8 py-3 text-base font-medium rounded-lg text-gray-200 bg-headerColor hover:text-gray-800 hover:bg-orange-400 md:py-4 md:text-lg md:px-10"
-                    >
-                      About me
-                    </Link>
+                    <div className="rounded-md shadow">
+                      <a
+                        href={`${urlResume}`}
+                        className="w-full flex items-center justify-center px-8 py-3 text-base font-medium rounded-lg text-gray-200 bg-headerColor hover:text-gray-800 hover:bg-orange-400 md:py-4 md:text-lg md:px-10"
+                      >
+                        Download Resume
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -88,11 +90,21 @@ const query = graphql`
         }
       }
     }
+    allFile(filter: { extension: { eq: "pdf" } }) {
+      edges {
+        node {
+          publicURL
+        }
+      }
+    }
   }
 `;
-export default (props) => (
+
+const staticQuery = (props) => (
   <StaticQuery
     query={query}
     render={(data) => <IndexPage data={data} {...props} />}
   />
 );
+
+export default staticQuery;
