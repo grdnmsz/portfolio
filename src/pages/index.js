@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql, StaticQuery, Link } from "gatsby";
+import { graphql, StaticQuery } from "gatsby";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -90,7 +90,7 @@ const query = graphql`
         }
       }
     }
-    allFile(filter: { extension: { eq: "pdf" } }) {
+    allFile(filter: { name: { eq: "resume" } }) {
       edges {
         node {
           publicURL
