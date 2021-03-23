@@ -1,10 +1,13 @@
 import React from "react";
+import { MDXRenderer } from "gatsby-plugin-mdx"
+
 /*
   styling markdown using : gatsby-remark-classes
 */
+
 const ExperienceDetails = ({
   node: {
-    html,
+    body,
     frontmatter: { company, dates, location, url, jobTitle },
   },
 }) => {
@@ -29,11 +32,7 @@ const ExperienceDetails = ({
           <dt className="text-lg font-extrabold leading-6 text-orange-200">
             {jobTitle}
           </dt>
-          <div
-            dangerouslySetInnerHTML={{
-              __html: html,
-            }}
-          />
+          <MDXRenderer>{body}</MDXRenderer>
         </div>
       </div>
     </React.Fragment>
