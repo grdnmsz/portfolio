@@ -63,15 +63,15 @@ const Header = () => {
               <div className="flex space-x-4">
                 <Link
                   to={`/`}
-                  className="hover:bg-teal-800 text-gray-200 px-3 py-2 block rounded-md text-sm font-medium"
-                  activeClassName="bg-teal-900 hover:bg-teal-800 text-gray-200 px-3 py-2 block rounded-md text-sm font-medium"
+                  className="hover:bg-teal-800  px-3 py-2 block rounded-md text-sm font-medium"
+                  activeClassName="bg-teal-900 hover:bg-teal-800  px-3 py-2 block rounded-md text-sm font-medium"
                 >
                   Home
                 </Link>
                 <Link
                   to={`/about`}
-                  className="text-gray-200 hover:bg-teal-800 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  activeClassName="bg-teal-900 hover:bg-teal-800 text-gray-200 px-3 py-2 block rounded-md text-sm font-medium"
+                  className=" hover:bg-teal-800 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  activeClassName="bg-teal-900 hover:bg-teal-800  px-3 py-2 block rounded-md text-sm font-medium"
                 >
                   About
                 </Link>
@@ -87,15 +87,15 @@ const Header = () => {
         <div className="px-2 pt-2 pb-3 space-y-1">
           <Link
             to={"/"}
-            className="hover:bg-teal-800 text-gray-200 px-3 py-2 block rounded-md text-sm font-medium"
-            activeClassName="bg-teal-900 hover:bg-teal-800 text-gray-200 px-3 py-2 block rounded-md text-sm font-medium"
+            className="hover:bg-teal-800  px-3 py-2 block rounded-md text-sm font-medium"
+            activeClassName="bg-teal-900 hover:bg-teal-800  px-3 py-2 block rounded-md text-sm font-medium"
           >
             Home
           </Link>
           <Link
             to={"/about"}
-            className="text-gray-200 hover:bg-teal-800 hover:text-white px-3 py-2 block rounded-md text-sm font-medium"
-            activeClassName="bg-teal-900 hover:bg-teal-800 text-gray-200 px-3 py-2 block rounded-md text-sm font-medium"
+            className=" hover:bg-teal-800 hover:text-white px-3 py-2 block rounded-md text-sm font-medium"
+            activeClassName="bg-teal-900 hover:bg-teal-800  px-3 py-2 block rounded-md text-sm font-medium"
           >
             About
           </Link>
