@@ -7,7 +7,7 @@ import SEO from "../components/seo";
 import ExperienceDetails from "../components/experienceDetails";
 
 const About = ({ data }) => {
-  const { nodes } = data.allMarkdownRemark;
+  const { nodes } = data.allMdx;
   return (
     <Layout>
       <SEO title="About me" />
@@ -64,12 +64,12 @@ const About = ({ data }) => {
 
 const query = graphql`
   query {
-    allMarkdownRemark(
+    allMdx(
       filter: { frontmatter: { tag: { eq: "details" } } }
       sort: { fields: frontmatter___date, order: DESC }
     ) {
       nodes {
-        html
+        body
         frontmatter {
           company
           dates

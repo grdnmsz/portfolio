@@ -1,9 +1,10 @@
 import { Link } from "gatsby";
+import { MDXRenderer } from "gatsby-plugin-mdx"
 import React from "react";
 
 const ExperienceCard = ({
   node: {
-    html,
+    body,
     frontmatter: { title, dates, location },
   },
 }) => {
@@ -19,12 +20,10 @@ const ExperienceCard = ({
           <br />
         </span>
 
-        <div
-          className="text-sm sm:px-32 md:px-52 lg:px-0"
-          dangerouslySetInnerHTML={{
-            __html: html,
-          }}
-        />
+        <div className="text-sm sm:px-32 md:px-52 lg:px-0">
+          <MDXRenderer className="text-sm sm:px-32 md:px-52 lg:px-0">{body}</MDXRenderer>
+        </div>
+
       </div>
 
       <button className="w-full rounded-b-xl text-lg h-16 hover:text-gray-800 hover:bg-orange-400 font-extrabold ">
