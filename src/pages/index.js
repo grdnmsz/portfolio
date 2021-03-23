@@ -5,8 +5,8 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import ExperienceCard from "../components/experienceCard";
 
-const IndexPage = ({ data: { allMarkdownRemark, allFile } }) => {
-  const { nodes } = allMarkdownRemark;
+const IndexPage = ({ data: { allMdx, allFile } }) => {
+  const { nodes } = allMdx;
   const urlResume = allFile.edges[0].node.publicURL;
 
   return (
@@ -77,12 +77,12 @@ const IndexPage = ({ data: { allMarkdownRemark, allFile } }) => {
 
 const query = graphql`
   query {
-    allMarkdownRemark(
+    allMdx(
       filter: { frontmatter: { tag: { eq: "card" } } }
       sort: { fields: frontmatter___date, order: DESC }
     ) {
       nodes {
-        html
+        body
         frontmatter {
           title
           dates
