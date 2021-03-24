@@ -1,10 +1,6 @@
 import React from "react";
 import { graphql, StaticQuery } from "gatsby";
-
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-
-import ExperienceDetails from "../components/experienceDetails";
+import { Layout, SEO, ExperienceDetails } from "../components/";
 
 const About = ({ data }) => {
   const { nodes } = data.allMdx;
