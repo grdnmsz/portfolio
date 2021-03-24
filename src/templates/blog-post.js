@@ -1,9 +1,8 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
+import { Layout, SEO } from "../components/";
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.mdx
