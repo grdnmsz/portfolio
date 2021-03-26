@@ -20,7 +20,7 @@ const BlogPostTemplate = ({ data, location }) => {
         itemType="http://schema.org/Article"
       >
         <header>
-          <h1 itemProp="headline">{post.frontmatter.title}</h1>
+          <h1 itemProp="headline" className="text-center mx-12 mt-12">{post.frontmatter.title}</h1>
           <p>{post.frontmatter.date}</p>
         </header>
         <MDXRenderer>{post.body}</MDXRenderer>
