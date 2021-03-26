@@ -1,13 +1,12 @@
-import * as React from "react"
-import { Link, graphql } from "gatsby"
-import { MDXRenderer } from "gatsby-plugin-mdx"
+import * as React from "react";
+import { Link, graphql } from "gatsby";
+import { MDXRenderer } from "gatsby-plugin-mdx";
 import { Layout, SEO } from "../components/";
 
-
 const BlogPostTemplate = ({ data, location }) => {
-  const post = data.mdx
-  const siteTitle = data.site.siteMetadata?.title || `Title`
-  const { previous, next } = data
+  const post = data.mdx;
+  const siteTitle = data.site.siteMetadata?.title || `Title`;
+  const { previous, next } = data;
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -26,7 +25,6 @@ const BlogPostTemplate = ({ data, location }) => {
         </header>
         <MDXRenderer>{post.body}</MDXRenderer>
         <hr />
-        
       </article>
       <nav className="blog-post-nav">
         <ul
@@ -55,10 +53,10 @@ const BlogPostTemplate = ({ data, location }) => {
         </ul>
       </nav>
     </Layout>
-  )
-}
+  );
+};
 
-export default BlogPostTemplate
+export default BlogPostTemplate;
 
 export const pageQuery = graphql`
   query BlogPostBySlug(
@@ -98,4 +96,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
