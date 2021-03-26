@@ -6,7 +6,7 @@ const inlineCode = (props): ReactElement => (
 );
 
 const blockquote = (props): ReactElement => (
-  <blockquote className="italic bg-headerColor text-gray-400 rounded-md ml-12 my-10 p-6 shadow">
+  <blockquote className="italic bg-headerColor text-gray-400 rounded-md xl:ml-12 ml-6 mr-6 my-10 p-4 text-xs xl:text-sm shadow">
     <p className="border-l-4 border-gray-400 pl-4 " {...props} />
   </blockquote>
 );
