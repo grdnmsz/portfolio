@@ -16,6 +16,7 @@ import * as DesignSystem from "./mdx/DesignSystem";
 const components = {
   inlineCode: DesignSystem.inlineCode,
   blockquote: DesignSystem.blockquote,
+  code: DesignSystem.code,
 };
 
 const Layout = ({ children }) => {

@@ -36,6 +36,23 @@ const saltyDuckEgg = "chinese preserved food product"
 
 [View raw (TEST.md)](https://raw.github.com/adamschwartz/github-markdown-kitchen-sink/master/README.md)
 
+
+```python
+@bot.command()
+async def moi(ctx) -> None:
+    """Add user to the game.
+    Usage : $moi
+    """
+    if hangman_game.game_on == False:
+        await ctx.message.channel.send(LITS.GAME_BOT['GAME_FIRST'])
+        return
+
+    user = ctx.author
+    hangman_game.players[user.id] = (user.name, 0)
+    await ctx.message.channel.send('oker {0}'.format(ctx.author.name))
+```
+
+
 This is a paragraph.
 
     This is a paragraph.
@@ -63,8 +80,10 @@ This is a paragraph.
 
 > Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
 
-    > Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-
+    > this is code Lorem, ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+```
+> this is code, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+```
 > ## This is a header.
 >
 > 1. This is the first list item.
@@ -180,13 +199,13 @@ This is [an example][id] reference-style link.
 
     [id]: http://example.com "Optional Title"
 
-_single asterisks_
+*single asterisks*
 
 _single underscores_
 
 **double asterisks**
 
-**double underscores**
+__double underscores__
 
     *single asterisks*
 
