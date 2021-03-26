@@ -1,13 +1,13 @@
 import { Link } from "gatsby";
-import { MDXRenderer } from "gatsby-plugin-mdx"
-import React from "react";
+import { MDXRenderer } from "gatsby-plugin-mdx";
+import React, { ReactElement } from "react";
 
 const ExperienceCard = ({
   node: {
     body,
     frontmatter: { title, dates, location },
   },
-}) => {
+}): ReactElement => {
   return (
     <div className="bg-headerColor rounded-xl">
       <div className="py-6 px-6 mb-1 text-center">
@@ -21,9 +21,10 @@ const ExperienceCard = ({
         </span>
 
         <div className="text-sm sm:px-32 md:px-52 lg:px-0">
-          <MDXRenderer className="text-sm sm:px-32 md:px-52 lg:px-0">{body}</MDXRenderer>
+          <MDXRenderer className="text-sm sm:px-32 md:px-52 lg:px-0">
+            {body}
+          </MDXRenderer>
         </div>
-
       </div>
 
       <button className="w-full rounded-b-xl text-lg h-16 hover:text-gray-800 hover:bg-orange-400 font-extrabold ">

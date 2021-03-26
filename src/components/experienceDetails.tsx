@@ -1,5 +1,5 @@
-import React from "react";
-import { MDXRenderer } from "gatsby-plugin-mdx"
+import React, { ReactElement } from "react";
+import { MDXRenderer } from "gatsby-plugin-mdx";
 
 /*
   styling markdown using : gatsby-remark-classes
@@ -10,7 +10,7 @@ const ExperienceDetails = ({
     body,
     frontmatter: { company, dates, location, url, jobTitle },
   },
-}) => {
+}): ReactElement => {
   return (
     <React.Fragment>
       <div className="flex">
