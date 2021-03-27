@@ -16,6 +16,7 @@ module.exports = {
       cyan: colors.cyan,
       headerColor: "#1e3b3b",
       backgroundColor: "#335355",
+      bgBlockQuote: "#476264",
     },
   },
   variants: {

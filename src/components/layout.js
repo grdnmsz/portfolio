@@ -17,6 +17,8 @@ const components = {
   inlineCode: DesignSystem.inlineCode,
   blockquote: DesignSystem.blockquote,
   code: DesignSystem.code,
+  p: DesignSystem.p,
+  subtitles: DesignSystem.subtitles,
 };
 
 const Layout = ({ children }) => {

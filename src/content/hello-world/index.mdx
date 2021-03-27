@@ -5,9 +5,12 @@ description: "Hello World"
 tag: "article"
 ---
 
-This is my first post on my new fake blog! How exciting!
+<subtitles>
+  This is my first post on my new fake blog! How exciting! I'm sure I'll write a
+  lot more interesting things in the future.
+</subtitles>
 
-I'm sure I'll write a lot more interesting things in the future.
+
 
 Oh, and here's a great quote from this Wikipedia on
 [salted duck eggs](https://en.wikipedia.org/wiki/Salted_duck_egg).
@@ -25,7 +28,7 @@ Oh, and here's a great quote from this Wikipedia on
 You can also write code blocks here!
 
 ```js
-const saltyDuckEgg = "chinese preserved food product"
+const saltyDuckEgg = "chinese preserved food product";
 ```
 
 | Number | Title                                    | Year |
@@ -35,7 +38,6 @@ const saltyDuckEgg = "chinese preserved food product"
 | 3      | Harry Potter and the Prisoner of Azkaban | 2004 |
 
 [View raw (TEST.md)](https://raw.github.com/adamschwartz/github-markdown-kitchen-sink/master/README.md)
-
 
 ```python
 @bot.command()
@@ -52,11 +54,9 @@ async def moi(ctx) -> None:
     await ctx.message.channel.send('oker {0}'.format(ctx.author.name))
 ```
 
-
 This is a paragraph.
 
     This is a paragraph.
-
 
 # Header 1
 
@@ -77,13 +77,14 @@ This is a paragraph.
     ##### Header 5
     ###### Header 6
 
-
 > Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
 
     > this is code Lorem, ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+
 ```
 > this is code, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
 ```
+
 > ## This is a header.
 >
 > 1. This is the first list item.
@@ -199,13 +200,13 @@ This is [an example][id] reference-style link.
 
     [id]: http://example.com "Optional Title"
 
-*single asterisks*
+_single asterisks_
 
 _single underscores_
 
 **double asterisks**
 
-__double underscores__
+**double underscores**
 
     *single asterisks*
 
