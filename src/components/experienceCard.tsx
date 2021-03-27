@@ -10,7 +10,7 @@ const ExperienceCard = ({
 }): ReactElement => {
   return (
     <div className="bg-headerColor rounded-xl">
-      <div className="py-6 px-6 mb-1 text-center">
+      <div className="py-6 mb-1 text-center">{/* todo, add px-6 */}
         <div className="text-2xl font-bold mb-4">{title}</div>
         <span className="text-sm">
           {dates}
@@ -19,11 +19,8 @@ const ExperienceCard = ({
           <br />
           <br />
         </span>
-
         <div className="text-sm sm:px-32 md:px-52 lg:px-0">
-          <MDXRenderer className="text-sm sm:px-32 md:px-52 lg:px-0">
-            {body}
-          </MDXRenderer>
+          <MDXRenderer>{body}</MDXRenderer>
         </div>
       </div>
 
