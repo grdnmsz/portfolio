@@ -20,8 +20,8 @@ const code = (props): ReactElement => <CodeBlock {...props} />;
 
 const subtitles = (props): ReactElement => (
   <>
-    <div {...props} className="xl:mx-16 px-20 text-md mb-12" />
-    <hr className="border-teal-100 mx-12 mb-16" />
+    <div {...props} className="xl:mx-16 px-20 xl:text-base text-xs mt-12 mb-6" />
+    <hr className="md:mx-60 mx-24 mb-16" />
   </>
 );
 
