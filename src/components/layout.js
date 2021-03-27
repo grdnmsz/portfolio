@@ -18,6 +18,7 @@ const components = {
   blockquote: DesignSystem.blockquote,
   code: DesignSystem.code,
   p: DesignSystem.p,
+  h2: DesignSystem.h2,
   subtitles: DesignSystem.subtitles,
 };
 

@@ -13,7 +13,7 @@ const CodeBlock = ({ children, className }): ReactElement => {
     >
       {({ className, style, tokens, getLineProps, getTokenProps }) => (
         <pre
-          className={className + " overflow-x-scroll my-10 rounded-md max-w-3xl text-xs xl:text-sm"}
+          className={className + " overflow-x-scroll my-10 rounded-md max-w-3xl mx-6 text-xs xl:text-sm"}
           style={{ ...style, padding: "20px" }}
         >
           {tokens.map((line, i) => (
