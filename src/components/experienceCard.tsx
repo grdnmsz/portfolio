@@ -2,7 +2,7 @@ import { Link } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import React from "react";
 
-export interface ExperienceCardProps {
+export type ExperienceCardProps = {
   node: {
     body: any;
     frontmatter: {

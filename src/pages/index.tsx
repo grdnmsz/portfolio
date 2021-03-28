@@ -15,12 +15,12 @@ interface allFile {
   }[];
 }
 
-interface IndexpPageProps extends PageProps {
+type IndexpPageProps = PageProps & {
   data: {
     allMdx: allMdx<ExperienceCardProps>;
     allFile: allFile;
   };
-}
+};
 
 const IndexPage = ({
   data: { allMdx, allFile },

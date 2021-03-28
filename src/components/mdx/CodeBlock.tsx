@@ -2,7 +2,12 @@ import React, { ReactElement } from "react";
 import Highlight, { defaultProps } from "prism-react-renderer";
 import vsDark from "prism-react-renderer/themes/shadesOfPurple";
 
-const CodeBlock = ({ children, className }): ReactElement => {
+export type CodeBlockProps = {
+  children : any,
+  className: string
+};
+
+const CodeBlock = ({ children, className }: CodeBlockProps): ReactElement => {
   const language = className ? className.replace(/language-/, "") : "";
   defaultProps.theme = vsDark;
   return (

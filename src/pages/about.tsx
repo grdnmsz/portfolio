@@ -7,7 +7,7 @@ interface allMdx<Type> {
   nodes: Type[];
 }
 
-interface AboutPageProps extends PageProps {
+type AboutPageProps = PageProps & {
   data: {
     allMdx: allMdx<ExperienceDetailsProps>;
   };
