@@ -1,8 +1,30 @@
-import React from "react";
-import { graphql, StaticQuery } from "gatsby";
-import { Layout, SEO, ExperienceCard } from "../components/";
+import React, { ReactElement } from "react";
+import { graphql, StaticQuery, PageProps } from "gatsby";
+import { Layout, SEO, ExperienceCard } from "../components";
+import { ExperienceCardProps } from "../components/experienceCard";
 
-const IndexPage = ({ data: { allMdx, allFile } }) => {
+interface allMdx<Type> {
+  nodes: Type[];
+}
+
+interface allFile {
+  edges: {
+    node: {
+      publicURL: string;
+    };
+  }[];
+}
+
+interface IndexpPageProps extends PageProps {
+  data: {
+    allMdx: allMdx<ExperienceCardProps>;
+    allFile: allFile;
+  };
+}
+
+const IndexPage = ({
+  data: { allMdx, allFile },
+}: IndexpPageProps): ReactElement => {
   const { nodes } = allMdx;
   const urlResume = allFile.edges[0].node.publicURL;
 
@@ -97,7 +119,7 @@ const query = graphql`
   }
 `;
 
-const staticQuery = (props) => (
+const staticQuery = (props: any) => (
   <StaticQuery
     query={query}
     render={(data) => <IndexPage data={data} {...props} />}

@@ -1,8 +1,19 @@
-import React from "react";
-import { graphql, StaticQuery } from "gatsby";
-import { Layout, SEO, ExperienceDetails } from "../components/";
+import React, { ReactElement } from "react";
+import { graphql, StaticQuery, PageProps } from "gatsby";
+import { Layout, SEO, ExperienceDetails } from "../components";
+import { ExperienceDetailsProps } from "../components/experienceDetails";
 
-const About = ({ data }) => {
+interface allMdx<Type> {
+  nodes: Type[];
+}
+
+interface AboutPageProps extends PageProps {
+  data: {
+    allMdx: allMdx<ExperienceDetailsProps>;
+  };
+}
+
+const About = ({ data }: AboutPageProps): ReactElement => {
   const { nodes } = data.allMdx;
   return (
     <Layout>
@@ -75,7 +86,7 @@ const query = graphql`
   }
 `;
 
-const staticQuery = (props) => (
+const staticQuery = (props: any) => (
   <StaticQuery
     query={query}
     render={(data) => <About data={data} {...props} />}

@@ -1,16 +1,29 @@
-import React, { ReactElement } from "react";
+import React from "react";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 
 /*
   styling markdown using : gatsby-remark-classes
 */
 
+export interface ExperienceDetailsProps {
+  node: {
+    body: any;
+    frontmatter: {
+      company: string;
+      dates: string;
+      location: string;
+      url: string;
+      jobTitle: string;
+    };
+  };
+}
+
 const ExperienceDetails = ({
   node: {
     body,
     frontmatter: { company, dates, location, url, jobTitle },
   },
-}): ReactElement => {
+}: ExperienceDetailsProps) => {
   return (
     <React.Fragment>
       <div className="flex">
