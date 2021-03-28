@@ -1,10 +1,8 @@
-import { useState } from "react";
+import { useState, FC } from "react";
 import { Link } from "gatsby";
-
-import PropTypes from "prop-types";
 import React from "react";
 
-const Header = () => {
+const Header: FC = () => {
   const [isOn, setIsOn] = useState(false);
   return (
     <nav className="bg-headerColor">
@@ -103,14 +101,6 @@ const Header = () => {
       </div>
     </nav>
   );
-};
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-};
-
-Header.defaultProps = {
-  siteTitle: ``,
 };
 
 export default Header;

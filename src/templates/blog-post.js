@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link, graphql } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
-import { Layout, SEO } from "../components/";
+import { Layout, SEO } from "../components";
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.mdx;
@@ -20,7 +20,7 @@ const BlogPostTemplate = ({ data, location }) => {
         itemType="http://schema.org/Article"
       >
         <header>
-          <h1 itemProp="headline" className="xl:text-center md:mx-12 mt-12">
+          <h1 itemProp="headline" className="text-center md:mx-12 mt-12 text-2xl md:text-4xl">
             {post.frontmatter.title}
           </h1>
         </header>
