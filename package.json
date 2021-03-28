@@ -30,7 +30,13 @@
     "tailwindcss": "^2.0.3"
   },
   "devDependencies": {
-    "prettier": "2.2.1"
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.3",
+    "@typescript-eslint/eslint-plugin": "^4.19.0",
+    "@typescript-eslint/parser": "^4.19.0",
+    "eslint": "^7.23.0",
+    "prettier": "2.2.1",
+    "typescript": "^4.2.3"
   },
   "keywords": [
     "gatsby"
@@ -42,12 +48,13 @@
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
+    "type-check": "tsc --noEmit",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": ""
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"

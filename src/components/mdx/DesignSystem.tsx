@@ -8,7 +8,7 @@ const inlineCode = (props): ReactElement => (
 );
 
 const p = (props): ReactElement => (
-  <p {...props} className="xl:text-sm text-xs" /> //xl:text-base todo
+  <p {...props} className="xl:text-sm text-sm" /> //xl:text-base todo
 );
 
 const blockquote = (props): ReactElement => (
@@ -23,7 +23,7 @@ const subtitles = (props): ReactElement => (
   <>
     <div
       {...props}
-      className="xl:mx-16 px-20 xl:text-base text-xs mt-6 xl:mb-12 mb-6 md:text-left text-center"
+      className="xl:mx-16 px-10 xl:text-base text-xs mt-6 xl:mb-12 mb-6 md:text-left text-center"
     />
     <hr className="md:mx-60 mx-24 xl:mb-12 mb-6" />
   </>

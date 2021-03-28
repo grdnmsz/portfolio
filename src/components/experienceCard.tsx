@@ -1,13 +1,24 @@
 import { Link } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
-import React, { ReactElement } from "react";
+import React from "react";
+
+export interface ExperienceCardProps {
+  node: {
+    body: any;
+    frontmatter: {
+      title: string;
+      dates: string;
+      location: string;
+    };
+  };
+}
 
 const ExperienceCard = ({
   node: {
     body,
     frontmatter: { title, dates, location },
   },
-}): ReactElement => {
+}: ExperienceCardProps) => {
   return (
     <div className="bg-headerColor rounded-xl">
       <div className="py-6 px-6 mb-1 text-center">
