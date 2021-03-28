@@ -1,8 +1,8 @@
-import { useState, FC } from "react";
+import { useState } from "react";
 import { Link } from "gatsby";
 import React from "react";
 
-const Header: FC = () => {
+const Header = () => {
   const [isOn, setIsOn] = useState(false);
   return (
     <nav className="bg-headerColor">

@@ -5,12 +5,12 @@ import { MDXRenderer } from "gatsby-plugin-mdx";
   styling markdown using : gatsby-remark-classes
 */
 
-export interface ExperienceDetailsProps {
+export type ExperienceDetailsProps = {
   node: {
     body: any;
     frontmatter: {
       company: string;
-      dates: string;
+      dates: string;  
       location: string;
       url: string;
       jobTitle: string;
