@@ -11,7 +11,7 @@ import Header from "./header";
 import { MDXProvider } from "@mdx-js/react";
 import * as DesignSystem from "./mdx/DesignSystem";
 
-interface Props {
+type LayoutProps = {
   children?: ReactNode;
 }
 
@@ -24,7 +24,7 @@ const components = {
   subtitles: DesignSystem.subtitles,
 };
 
-const Layout = ({ children }: Props) => {
+const Layout = ({ children }: LayoutProps) => {
   return (
     <>
       <Header />
