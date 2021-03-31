@@ -3,8 +3,8 @@ import { graphql, StaticQuery, PageProps } from "gatsby";
 import { Layout, SEO, ExperienceCard } from "../components";
 import { ExperienceCardProps } from "../components/experienceCard";
 
-interface allMdx<Type> {
-  nodes: Type[];
+interface allMdx<T> {
+  nodes: T[];
 }
 
 interface allFile {
