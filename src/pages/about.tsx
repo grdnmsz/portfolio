@@ -3,8 +3,8 @@ import { graphql, StaticQuery, PageProps } from "gatsby";
 import { Layout, SEO, ExperienceDetails } from "../components";
 import { ExperienceDetailsProps } from "../components/experienceDetails";
 
-interface allMdx<Type> {
-  nodes: Type[];
+interface allMdx<T> {
+  nodes: T[];
 }
 
 type AboutPageProps = PageProps & {
