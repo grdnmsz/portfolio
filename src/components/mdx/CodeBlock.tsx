@@ -18,7 +18,7 @@ const CodeBlock = ({ children, className }: CodeBlockProps): ReactElement => {
     >
       {({ className, style, tokens, getLineProps, getTokenProps }) => (
         <pre
-          className={className + " overflow-x-scroll my-10 rounded-md max-w-3xl mr-6 text-xs xl:text-sm"}
+          className={className + " overflow-x-scroll my-10 rounded-md max-w-3xl mr-6 text-xs md:text-sm"}
           style={{ ...style, padding: "20px" }}
         >
           {tokens.map((line, i) => (
