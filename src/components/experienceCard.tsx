@@ -14,7 +14,7 @@ export type ExperienceCardProps = {
 const ExperienceCard = (node: ExperienceCardProps) => {
   const { title, dates, location } = node.frontmatter;
   return (
-    <div className="bg-headerColor rounded-xl">
+    <div className="bg-headerColor rounded">
       <div className="py-6 px-6 mb-1 text-center">
         <div className="text-2xl font-bold mb-4">{title}</div>
         <span className="text-sm">
@@ -29,7 +29,7 @@ const ExperienceCard = (node: ExperienceCardProps) => {
         </div>
       </div>
 
-      <button className="w-full rounded-b-xl text-lg h-16 hover:text-gray-800 hover:bg-orange-400 font-extrabold ">
+      <button className="w-full rounded-b text-lg h-16 hover:text-gray-800 hover:bg-orange-400 font-extrabold ">
         <Link className="w-full flex justify-center" to="/about">
           Learn more
         </Link>
