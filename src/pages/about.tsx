@@ -23,7 +23,7 @@ const About = ({ data }: AboutPageProps): ReactElement => {
           <p className="mt-2 text-3xl text-center leading-8 font-extrabold tracking-tight sm:text-4xl">
             About Me
           </p>
-          <p className="mt-4 bg-headerColor rounded-xl py-6 px-6 text-sm md:text-base lg:mx-auto ">
+          <p className="mt-4 bg-headerColor rounded py-6 px-6 text-sm md:text-base lg:mx-auto ">
             I hold a <span className="block text-orange-200 inline">MEng</span>{" "}
             in Electronics, in addition to having experience in various domains,
             from fundamental sciences and applied research, to professional
