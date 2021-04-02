@@ -1,29 +1,24 @@
 import React from "react";
 import { MDXRenderer } from "gatsby-plugin-mdx";
+import { node } from "prop-types";
 
 /*
   styling markdown using : gatsby-remark-classes
 */
 
 export type ExperienceDetailsProps = {
-  node: {
-    body: any;
-    frontmatter: {
-      company: string;
-      dates: string;  
-      location: string;
-      url: string;
-      jobTitle: string;
-    };
+  body: any;
+  frontmatter: {
+    company: string;
+    dates: string;
+    location: string;
+    url: string;
+    jobTitle: string;
   };
-}
+};
 
-const ExperienceDetails = ({
-  node: {
-    body,
-    frontmatter: { company, dates, location, url, jobTitle },
-  },
-}: ExperienceDetailsProps) => {
+const ExperienceDetails = (node: ExperienceDetailsProps) => {
+  const { company, dates, location, url, jobTitle } = node.frontmatter;
   return (
     <React.Fragment>
       <div className="flex">
@@ -45,7 +40,7 @@ const ExperienceDetails = ({
           <dt className="text-lg font-extrabold leading-6 text-orange-200">
             {jobTitle}
           </dt>
-          <MDXRenderer>{body}</MDXRenderer>
+          <MDXRenderer>{node.body}</MDXRenderer>
         </div>
       </div>
     </React.Fragment>
