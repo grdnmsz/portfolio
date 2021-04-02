@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&family=Roboto&display=swap');
 
 html {
   font: 112.5%/1.45em;
@@ -9,7 +10,7 @@ html {
 }
 
 body {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+  font-family: 'Roboto', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
     Ubuntu;
   background-color: #335355;
   color: #e5e7eb;
@@ -19,18 +20,24 @@ h1 {
   margin-bottom: 1.45rem;
   font-weight: bold;
   font-size: 2.25rem;
+  font-family: "Playfair Display", serif;
+
 }
 
 h2 {
   margin-bottom: 1.45rem;
   font-weight: bold;
   font-size: 1.62671rem;
+  font-family: "Playfair Display", serif;
+
 }
 
 h3 {
   margin-bottom: 1.45rem;
   font-weight: bold;
   font-size: 1.38316rem;
+  font-family: "Playfair Display", serif;
+
 }
 
 ul {

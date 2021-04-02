@@ -48,7 +48,7 @@ const IndexPage = ({
                     </span>
                   </span>
                 </h1>
-                <p className="mt-3 text-base  sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                <p className="mt-3 text-base sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 lg:mx-0">
                   I’m a Software Engineer looking for new opportunities in Full
                   Stack development. Currently unemployed, I’m available and
                   motivated to take on creative and challenging missions.
