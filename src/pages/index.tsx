@@ -27,7 +27,6 @@ const IndexPage = ({
 }: IndexpPageProps): ReactElement => {
   const { nodes } = allMdx;
   const urlResume = allFile.edges[0].node.publicURL;
-
   return (
     <Layout>
       <SEO title="Home" />
@@ -84,7 +83,7 @@ const IndexPage = ({
 
             <div className="grid lg:grid-cols-3 gap-8 m-5 max-w-5xl m-auto">
               {nodes.map((node, i) => {
-                return <ExperienceCard key={i} node={node} />;
+                return <ExperienceCard key={i} {...node} />;
               })}
             </div>
           </main>
