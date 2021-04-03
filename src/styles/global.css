@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&family=Lato&display=swap');
 
 html {
   font: 112.5%/1.45em;
@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  font-family: 'Roboto', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+  font-family: 'Lato', sans-serif, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
     Ubuntu;
   background-color: #335355;
   color: #e5e7eb;
