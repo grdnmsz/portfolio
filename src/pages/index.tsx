@@ -30,12 +30,12 @@ const IndexPage = ({
   return (
     <Layout>
       <SEO title="Home" />
-      <div className="relative bg-white overflow-hidden">
-        <div className="max-w-7xl mx-auto">
-          <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-26">
-            <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+      <main className="mt-10 mx-auto max-w-7xl sm:mt-12 md:mt-16 lg:mt-20 xl:mt-28">
+        <div className="relative bg-white overflow-hidden">
+          <div className="max-w-7xl mx-auto">
+            <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-26">
               <div className="sm:text-center lg:text-left">
-                <h1 className="text-4xl tracking-tight font-extrabold  sm:text-5xl md:text-6xl">
+                <h1 className="text-4xl tracking-tight font-extrabold sm:text-5xl md:text-6xl">
                   <span className="block xl:inline">
                     Hi{" "}
                     <span role="img" aria-label="wave">
@@ -74,21 +74,19 @@ const IndexPage = ({
                   </div>
                 </div>
               </div>
-            </main>
-          </div>
-          <main className="px-1  box-content w-150">
-            <h3 className="text-4xl sm:text-5xl text-center my-10 font-extrabold">
-              Where did I work ?
-            </h3>
+            </div>
+            <h2 className="text-4xl sm:text-5xl text-center my-10 font-extrabold">
+              Where I've worked
+            </h2>
 
             <div className="grid lg:grid-cols-3 gap-8 m-5 max-w-5xl m-auto">
               {nodes.map((node, i) => {
                 return <ExperienceCard key={i} {...node} />;
               })}
             </div>
-          </main>
+          </div>
         </div>
-      </div>
+      </main>
     </Layout>
   );
 };
