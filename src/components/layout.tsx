@@ -13,14 +13,13 @@ import * as DesignSystem from "./mdx/DesignSystem";
 
 type LayoutProps = {
   children?: ReactNode;
-}
+};
 
 const components = {
   inlineCode: DesignSystem.inlineCode,
   blockquote: DesignSystem.blockquote,
   code: DesignSystem.code,
   p: DesignSystem.p,
-  h2: DesignSystem.h2,
   subtitles: DesignSystem.subtitles,
 };
 
@@ -38,7 +37,7 @@ const Layout = ({ children }: LayoutProps) => {
         }}
       >
         <MDXProvider components={components}>
-          <main>{children}</main>
+          <main className="px-4 sm:px-6 lg:px-8">{children}</main>
         </MDXProvider>
       </div>
       <footer className="bg-backgroundColor text-gray-300 px-6 lg:px-8 py-12">
