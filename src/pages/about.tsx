@@ -18,11 +18,11 @@ const About = ({ data }: AboutPageProps): ReactElement => {
   return (
     <Layout>
       <SEO title="About me" />
-      <div className="py-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="py-12 max-w-7xl mx-auto">
         <div className="text-left">
-          <h2 className="mt-2 text-3xl text-center leading-8 font-extrabold tracking-tight sm:text-4xl">
+          <h1 className="mt-2 text-3xl text-center leading-8 font-extrabold tracking-tight sm:text-4xl">
             About Me
-          </h2>
+          </h1>
           <p className="mt-4 bg-headerColor rounded py-6 px-6 text-sm md:text-base lg:mx-auto ">
             I hold a <span className="block text-orange-200 inline">MEng</span>{" "}
             in Electronics, in addition to having experience in various domains,

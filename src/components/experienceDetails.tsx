@@ -22,7 +22,7 @@ const ExperienceDetails = (node: ExperienceDetailsProps) => {
   return (
     <React.Fragment>
       <div className="flex">
-        <div className="ml-4 hidden md:block">
+        <div className="hidden md:block">
           <dt className="text-lg leading-6 font-extrabold font-medium text-orange-300">
             {company}
           </dt>
