@@ -16,7 +16,7 @@ const ExperienceCard = (node: ExperienceCardProps) => {
   return (
     <div className="bg-headerColor rounded">
       <div className="py-6 px-6 mb-1 text-center">
-        <div className="text-2xl font-bold mb-4 hover:text-teal-300">
+        <div className="text-2xl font-bold mb-4 hover:text-teal-600">
           <Link className="w-full flex justify-center" to="/about">
             {title}
           </Link>

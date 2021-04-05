@@ -23,10 +23,10 @@ const ExperienceDetails = (node: ExperienceDetailsProps) => {
     <React.Fragment>
       <div className="flex">
         <div className="hidden md:block">
-          <dt className="text-lg leading-6 font-extrabold font-medium text-orange-300">
+          <dt className="text-lg leading-6 font-extrabold font-medium">
             {company}
           </dt>
-          <dd className="mt-2 text-orange-100 text-xs">{url}</dd>
+          <dd className="mt-2 text-xs">{url}</dd>
           <dd className="text-sm py-1">{dates}</dd>
           <dd className="text-sm">{location}</dd>
         </div>
@@ -34,10 +34,10 @@ const ExperienceDetails = (node: ExperienceDetailsProps) => {
 
       <div className="flex col-span-3 ">
         <div className="ml-4 ">
-          <p className="text-lg md:hidden leading-6 font-extrabold text-orange-300">
+          <p className="text-lg md:hidden leading-6 font-extrabold">
             {company}
           </p>
-          <dt className="text-lg font-extrabold leading-6 text-orange-200">
+          <dt className="text-lg font-extrabold leading-6 text-teal-100">
             {jobTitle}
           </dt>
           <MDXRenderer>{node.body}</MDXRenderer>

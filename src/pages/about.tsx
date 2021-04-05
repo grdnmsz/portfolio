@@ -11,7 +11,7 @@ type AboutPageProps = PageProps & {
   data: {
     allMdx: allMdx<ExperienceDetailsProps>;
   };
-}
+};
 
 const About = ({ data }: AboutPageProps): ReactElement => {
   const { nodes } = data.allMdx;
@@ -24,32 +24,15 @@ const About = ({ data }: AboutPageProps): ReactElement => {
             About Me
           </h1>
           <p className="mt-4 bg-headerColor rounded py-6 px-6 text-sm md:text-base lg:mx-auto ">
-            I hold a <span className="block text-orange-200 inline">MEng</span>{" "}
-            in Electronics, in addition to having experience in various domains,
-            from fundamental sciences and applied research, to professional
-            mobile development{" "}
-            <span role="img" aria-label="wave">
-              📱
-            </span>
-            .
+            I hold a <span className="block inline">MEng</span> in Electronics,
+            in addition to having experience in various domains, from
+            fundamental sciences and applied research, to professional mobile
+            development.
             <br />
-            <br className="" />2 years ago, I took my focus off Computer Science
-            to be more involved in creative projects such as music composition
-            and filmmaking. I’ve since been growing as a Full Stack Engineer
-            with
-            <span className="block text-orange-200 inline">
-              {" "}
-              React
-            </span> and{" "}
-            <span className="block text-orange-200 inline">Node.js</span>{" "}
-            expertise{" "}
-            <span role="img" aria-label="wave">
-              💻
-            </span>{" "}
-            , eager to take on{" "}
-            <span className="block text-orange-200 inline">
-              challenging missions
-            </span>{" "}
+            <br />2 years ago, I took my focus off Computer Science to be more
+            involved in creative projects such as music composition and
+            filmmaking. I’ve since been growing as a Full Stack Engineer with
+            React and Node.js expertise, eager to take on challenging missions
             as well as to keep on improving my skills.
           </p>
         </div>
