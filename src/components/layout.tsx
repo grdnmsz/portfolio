@@ -45,7 +45,7 @@ const Layout = ({ children }: LayoutProps) => {
           <div className="flex items-center space-x-2">
             <a
               href="https://github.com/grdnmsz"
-              className="hover:text-orange-100"
+              className="hover:text-teal-100"
             >
               <span className="sr-only">Personal Github profile</span>
               <svg
@@ -63,7 +63,7 @@ const Layout = ({ children }: LayoutProps) => {
             </a>
             <a
               href="https://www.linkedin.com/in/gordon-meszaros-530649114/"
-              className="hover:text-orange-100"
+              className="hover:text-teal-100"
             >
               <span className="sr-only">Personal linkedin profile</span>
               <svg
