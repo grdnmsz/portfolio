@@ -52,7 +52,7 @@ const Header = () => {
               <Link to={`/`}>
                 <img
                   className="block h-10 w-auto"
-                  src={"https://i.imgur.com/CBlWry2.png"}
+                  src={"https://i.imgur.com/NWNQfTS.png"}
                   alt="PP"
                 />
               </Link>
