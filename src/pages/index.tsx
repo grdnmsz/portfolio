@@ -37,15 +37,8 @@ const IndexPage = ({
               <div className="sm:text-center lg:text-left">
                 <h1 className="text-4xl tracking-tight font-extrabold sm:text-5xl md:text-6xl">
                   <span className="block xl:inline">
-                    Hi{" "}
-                    <span role="img" aria-label="wave">
-                      👋🏽
-                    </span>
-                    <br />
-                    I'm{" "}
-                    <span className="block text-orange-300 inline">
-                      Gordon!
-                    </span>
+                    Hi, <br />
+                    I'm Gordon!
                   </span>
                 </h1>
                 <p className="mt-3 text-base sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 lg:mx-0">
@@ -57,7 +50,7 @@ const IndexPage = ({
                   <div className="rounded shadow">
                     <a
                       href="mailto:gordonmes@gmail.com"
-                      className="w-full flex items-center justify-center px-8 py-3 text-base font-medium rounded  bg-headerColor hover:text-gray-800 hover:bg-orange-400 md:py-4 md:text-lg md:px-10"
+                      className="w-full flex items-center justify-center px-8 py-3 text-base font-medium rounded  bg-headerColor hover:bg-teal-700 md:py-4 md:text-lg md:px-10"
                     >
                       Get in touch
                     </a>
@@ -66,7 +59,7 @@ const IndexPage = ({
                     <div className="rounded shadow">
                       <a
                         href={`${urlResume}`}
-                        className="w-full flex items-center justify-center px-8 py-3 text-base font-medium rounded  bg-headerColor hover:text-gray-800 hover:bg-orange-400 md:py-4 md:text-lg md:px-10"
+                        className="w-full flex items-center justify-center px-8 py-3 text-base font-medium rounded  bg-headerColor hover:bg-teal-700 md:py-4 md:text-lg md:px-10"
                       >
                         Download Resume
                       </a>
