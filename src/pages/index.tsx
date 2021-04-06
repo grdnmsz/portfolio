@@ -33,7 +33,7 @@ const IndexPage = ({
       <main className="mt-10 mx-auto max-w-7xl sm:mt-12 md:mt-16 lg:mt-20 xl:mt-28">
         <div className="relative bg-white overflow-hidden">
           <div className="max-w-7xl mx-auto">
-            <IntroBio {...urlResume} />
+            <IntroBio urlResume={urlResume} />
             <h2 className="text-4xl sm:text-5xl text-center my-10 font-extrabold">
               Where I've worked
             </h2>
