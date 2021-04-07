@@ -1,12 +1,14 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h3>
-  Portfolio project using Gatsby and Tailwind CSS
-</h3>
+# Personal portfolio/blog
+## Installation
+1. Clone repo
 
+```bash
+git clone https://github.com/grdnmsz/portfolio.git
+```
 
+2. Install dependencies
+In the project folder : 
+```bash
+npm i
+```
 
