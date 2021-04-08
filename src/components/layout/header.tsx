@@ -48,7 +48,7 @@ const Header = () => {
             </button>
           </div>
           <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-            <div className="flex-shrink-0 flex items-center">
+            {/* <div className="flex-shrink-0 flex items-center">
               <Link to={`/`}>
                 <img
                   className="block h-10 w-auto"
@@ -56,20 +56,20 @@ const Header = () => {
                   alt="PP"
                 />
               </Link>
-            </div>
+            </div> */}
             <div className="hidden sm:block sm:ml-6">
               <div className="flex space-x-4">
                 <Link
                   to={`/`}
-                  className="hover:bg-teal-800 px-3 py-2 block rounded-sm text-sm font-medium"
-                  activeClassName="bg-teal-900 hover:bg-teal-800  px-3 py-2 block text-sm font-medium"
+                  className="px-3 py-2 block text-sm font-medium"
+                  activeClassName="bg-border-900 border-b px-3 py-2 block text-sm font-medium"
                 >
                   Home
                 </Link>
                 <Link
                   to={`/about`}
-                  className=" hover:bg-teal-800 px-3 py-2 rounded-sm text-sm font-medium"
-                  activeClassName="bg-teal-900 hover:bg-teal-800  px-3 py-2 block text-sm font-medium"
+                  className="px-3 py-2 text-sm font-medium"
+                  activeClassName="bg-border-900 border-b px-3 py-2 block text-sm font-medium"
                 >
                   About
                 </Link>

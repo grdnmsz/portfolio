@@ -37,7 +37,7 @@ const ExperienceDetails = (node: ExperienceDetailsProps) => {
           <p className="text-lg md:hidden leading-6 font-extrabold">
             {company}
           </p>
-          <dt className="text-lg font-extrabold leading-6 text-teal-100">
+          <dt className="text-lg font-extrabold leading-6">
             {jobTitle}
           </dt>
           <MDXRenderer>{node.body}</MDXRenderer>
