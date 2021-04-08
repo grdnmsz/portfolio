@@ -14,9 +14,9 @@ module.exports = {
       purple: colors.purple,
       orange: colors.orange,
       cyan: colors.cyan,
-      headerColor: "#1e3b3b",
-      backgroundColor: "#335355",
-      bgBlockQuote: "#476264",
+      headerColor: "#161c23",
+      backgroundColor: "#0e1218",
+      bgBlockQuote: "#21272c",
     },
     extend: {
       keyframes: {
