@@ -68,7 +68,7 @@ const Header = () => {
                 </Link>
                 <Link
                   to={`/about`}
-                  className="py-2 mx-4 text-sm font-medium"
+                  className="py-2 text-sm font-medium"
                   activeClassName="bg-border-900 border-b block text-sm font-medium"
                 >
                   About
