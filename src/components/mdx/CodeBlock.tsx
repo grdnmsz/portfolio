@@ -19,7 +19,7 @@ const CodeBlock = ({ children, className }: CodeBlockProps): ReactElement => {
         <pre
           className={
             className +
-            " overflow-x-scroll my-10 rounded-md max-w-3xl mr-6 text-xs md:text-sm"
+            " overflow-x-scroll my-10 rounded max-w-3xl mr-6 text-xs md:text-sm"
           }
           style={{ ...style, padding: "20px", position: "relative" }}
         >
