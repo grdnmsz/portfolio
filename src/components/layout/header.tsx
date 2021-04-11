@@ -50,26 +50,35 @@ const Header = () => {
           <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex-shrink-0 flex items-center">
               <Link to={`/`}>
-                <div className="text-xl">{"gordon"}
-                <span className="text-teal-700">{"$>"}</span>
-                {"dev"}</div>
+                <div className="text-xl mr-12">
+                  {"gordon"}
+                  <span className="text-teal-700">{"$>"}</span>
+                  {"dev"}
+                </div>
               </Link>
             </div>
             <div className="hidden sm:block sm:ml-6">
-              <div className="flex space-x-4">
+              <div className="flex space-x-12">
                 <Link
                   to={`/`}
-                  className="px-3 py-2 block text-sm font-medium"
-                  activeClassName="bg-border-900 border-b px-3 py-2 block text-sm font-medium"
+                  className="py-2 block text-sm font-medium"
+                  activeClassName="bg-border-900 border-b block text-sm font-medium"
                 >
                   Home
                 </Link>
                 <Link
                   to={`/about`}
-                  className="px-3 py-2 text-sm font-medium"
-                  activeClassName="bg-border-900 border-b px-3 py-2 block text-sm font-medium"
+                  className="py-2 mx-4 text-sm font-medium"
+                  activeClassName="bg-border-900 border-b block text-sm font-medium"
                 >
                   About
+                </Link>
+                <Link
+                  to={`/articles`}
+                  className="py-2 text-sm font-medium"
+                  activeClassName="bg-border-900 border-b block text-sm font-medium"
+                >
+                  Articles (WIP)
                 </Link>
               </div>
             </div>
@@ -94,6 +103,13 @@ const Header = () => {
             activeClassName="bg-backgroundColor px-3 py-2 block rounded text-sm font-medium"
           >
             About
+          </Link>
+          <Link
+            to={"/articles"}
+            className="px-3 py-2 block rounded text-sm font-medium"
+            activeClassName="bg-backgroundColor px-3 py-2 block rounded text-sm font-medium"
+          >
+            Articles (WIP)
           </Link>
         </div>
       </div>

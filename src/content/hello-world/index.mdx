@@ -1,6 +1,6 @@
 ---
 title: Testing Styling Page using MDX with Gatsby & Typescript
-date: "2015-05-01T22:12:03.284Z"
+date: "2015-05-01"
 description: "Hello World"
 tag: "article"
 ---
@@ -8,8 +8,19 @@ tag: "article"
 <subtitles>
   This is my first post on my new fake blog! How exciting! I'm sure I'll write a
   lot more interesting things in the future. Lorem ipsum dolor sit amet,
-  consectetuer adipiscing elit. 
+  consectetuer adipiscing elit.
 </subtitles>
+
+```js
+import React from "react";
+const AboutPage = () => (
+  <main>
+    <h1>About the Author</h1>
+    <p>Welcome to my Gatsby site.</p>
+  </main>
+);
+export default AboutPage;
+```
 
 A salted duck egg is a Chinese preserved food product made by soaking duck eggs in brine, or packing each egg in damp,
 salted charcoal. In Asian supermarkets, these eggs are sometimes sold covered in a thick layer of salted charcoal paste.
