@@ -10,7 +10,7 @@ const p = (props: ReactPropTypes): ReactElement => (
 );
 
 const blockquote = (props: ReactPropTypes): ReactElement => (
-  <blockquote className="border-l-4 border-teal-600 pl-0 bg-bgBlockQuote text-xs table italic text-gray-300 mr-6 my-10 p-4">
+  <blockquote className="border-l-4 border-teal-600 pl-0 bg-bgBlockQuote rounded text-xs table italic text-gray-300 mr-6 my-10 p-4">
     <div {...props} className="pl-2" />
   </blockquote>
 );
