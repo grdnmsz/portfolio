@@ -4,12 +4,14 @@ import ExperienceDetails from "./experienceDetails";
 import ExperienceCard from "./experienceCard";
 import Image from "./image";
 import IntroBio from "./introBio";
+import ArticleCard from "./articleCard";
 
-export { 
-  Layout, 
-  SEO, 
-  ExperienceDetails, 
-  ExperienceCard, 
+export {
+  Layout,
+  SEO,
+  ExperienceDetails,
+  ExperienceCard,
   Image,
-  IntroBio
+  IntroBio,
+  ArticleCard
 };
