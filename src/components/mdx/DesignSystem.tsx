@@ -6,7 +6,7 @@ const inlineCode = (props: ReactPropTypes): ReactElement => (
 );
 
 const p = (props: ReactPropTypes): ReactElement => (
-  <p {...props} className="md:text-base text-sm" />
+  <p {...props} className="md:text-base" />
 );
 
 const blockquote = (props: ReactPropTypes): ReactElement => (
