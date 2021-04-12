@@ -18,7 +18,7 @@ const ArticleCard = (props: ArticleCardProps): ReactElement => {
   return (
     <div className="">
       <Link to={slug}>
-        <h1 className="text-xl sm:text-2xl ">{title}</h1>
+        <h1 className="sm:text-2xl text-xl">{title}</h1>
         <div className="text-it">{description}</div>
         <br />
         {date}
