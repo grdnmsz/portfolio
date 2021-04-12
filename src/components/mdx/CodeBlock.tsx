@@ -17,24 +17,25 @@ const CodeBlock = ({ children, className }: CodeBlockProps): ReactElement => {
     <Highlight {...defaultProps} code={children} language={language}>
       {({ className, style, tokens, getLineProps, getTokenProps }) => (
         <pre
-          className={
-            className +
-            " overflow-x-scroll my-10 rounded max-w-3xl text-sm"
-          }
+          className={className + " max-w-3xl my-10 rounded text-sm"}
           style={{ ...style, padding: "20px", position: "relative" }}
         >
-          <span className="bg-orange-800 rounded-b px-3 pb-1 fixed absolute top-0">
-            {language}
-          </span>
-          <br />
-          <CopyButton toCopy={children} />
-          {tokens.map((line, i) => (
-            <div key={i} {...getLineProps({ line, key: i })}>
-              {line.map((token, key) => (
-                <span key={key} {...getTokenProps({ token, key })} />
-              ))}
-            </div>
-          ))}
+          <div className="overflow-x-scroll ">
+            {language ? (
+              <span className="absolute bg-orange-800 rounded-b pb-1 px-3 top-0">
+                {language}
+              </span>
+            ) : null}
+            <br />
+            <CopyButton toCopy={children} />
+            {tokens.map((line, i) => (
+              <div key={i} {...getLineProps({ line, key: i })}>
+                {line.map((token, key) => (
+                  <span key={key} {...getTokenProps({ token, key })} />
+                ))}
+              </div>
+            ))}
+          </div>
         </pre>
       )}
     </Highlight>
