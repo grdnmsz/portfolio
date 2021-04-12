@@ -34,12 +34,11 @@ const Layout = ({ children }: LayoutProps) => {
           margin: `0 auto`,
           maxWidth: 1080,
           padding: `0 1.0875rem 1.45rem`,
-          paddingLeft: "1.65rem",
-          paddingRight: "1.65rem",
+     
         }}
       >
         <MDXProvider components={components}>
-          <main className="px-4 sm:px-6 lg:px-8">{children}</main>
+          <main className="">{children}</main>
         </MDXProvider>
       </div>
       <Footer />
