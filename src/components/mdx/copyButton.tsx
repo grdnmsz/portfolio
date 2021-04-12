@@ -14,7 +14,7 @@ const CopyButton = ({ toCopy }: CopyButtonProps) => {
         copyToClipBoard(toCopy);
         setTimeout(() => setIsCopied(false), 3000);
       }}
-      className="rounded absolute right-1 top-1 px-2 py-1 hover:bg-orange-800"
+      className="absolute rounded hover:bg-orange-800 px-2 py-1 right-1 top-1"
     >
       {isCopied ? "Copied" : "Copy"}
     </button>

@@ -10,7 +10,7 @@ const p = (props: ReactPropTypes): ReactElement => (
 );
 
 const blockquote = (props: ReactPropTypes): ReactElement => (
-  <blockquote className="border-l-4 border-teal-600 pl-0 bg-bgBlockQuote rounded text-xs table italic text-gray-300 mr-6 my-10 p-4">
+  <blockquote className="border-l-4 border-teal-600 bg-bgBlockQuote italic mr-6 my-10 p-4 pl-0 rounded table text-gray-300 text-xs">
     <div {...props} className="pl-2" />
   </blockquote>
 );
@@ -21,9 +21,9 @@ const subtitles = (props: ReactPropTypes): ReactElement => (
   <>
     <div
       {...props}
-      className="xl:mx-16 px-10 md:text-base text-sm mt-6 xl:mb-12 mb-6 md:text-left text-center"
+      className="mb-6 mt-6 md:text-base md:text-left px-10 text-center text-sm xl:mb-12 xl:mx-16"
     />
-    <hr className="md:mx-60 mx-24 xl:mb-12 mb-6" />
+    <hr className="mb-6 md:mx-60 mx-24 xl:mb-12" />
   </>
 );
 

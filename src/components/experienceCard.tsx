@@ -15,9 +15,9 @@ const ExperienceCard = (node: ExperienceCardProps) => {
   const { title, dates, location } = node.frontmatter;
   return (
     <div className="bg-headerColor rounded">
-      <div className="py-6 px-6 mb-1 text-center">
-        <div className="text-2xl font-bold mb-4 hover:text-teal-600">
-          <Link className="w-full flex justify-center" to="/about">
+      <div className="mb-1 px-6 py-6 text-center">
+        <div className="mb-4 font-bold hover:text-teal-600 text-2xl">
+          <Link className="flex justify-center w-full" to="/about">
             {title}
           </Link>
         </div>
@@ -28,7 +28,7 @@ const ExperienceCard = (node: ExperienceCardProps) => {
           <br />
           <br />
         </span>
-        <div className="text-sm sm:px-32 md:px-52 lg:px-0">
+        <div className="md:px-52 lg:px-0 sm:px-32 text-sm">
           <MDXRenderer>{node.body}</MDXRenderer>
         </div>
       </div>
