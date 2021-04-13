@@ -2,8 +2,8 @@ import React from "react";
 
 const footer = () => {
   return (
-    <footer className="bg-backgroundColor text-gray-300 px-6 lg:px-8 py-12">
-      <div className="max-w-screen-xl mx-auto flex flex-col items-center ">
+    <footer className="bg-backgroundColor lg:px-8 px-6 py-12 text-gray-300">
+      <div className="flex flex-col items-center max-w-screen-xl mx-auto">
         <div className="flex items-center space-x-2">
           <a href="https://github.com/grdnmsz" className="hover:text-teal-100">
             <span className="sr-only">Personal Github profile</span>
@@ -35,7 +35,7 @@ const footer = () => {
             </svg>
           </a>
         </div>
-        <div className="text-sm mt-4 flex items-center space-x-1 ">
+        <div className="flex items-center mt-4 space-x-1 text-sm">
           <div>{new Date().getFullYear()} • &copy;Gordon Meszaros </div>
           <div>• Made with </div>
           <a href="https://www.gatsbyjs.com" className="hover:text-purple-400">

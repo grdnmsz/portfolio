@@ -16,7 +16,7 @@ const ArticleCard = (props: ArticleCardProps): ReactElement => {
   const { title, description, date } = props.frontmatter;
   const { slug } = props.fields;
   return (
-    <div className="">
+    <div className="max-w-xl">
       <Link to={slug}>
         <h1 className="sm:text-2xl text-xl">{title}</h1>
         <div className="text-it">{description}</div>
