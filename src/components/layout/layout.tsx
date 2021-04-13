@@ -6,7 +6,6 @@
  */
 
 import React, { ReactNode } from "react";
-import PropTypes from "prop-types";
 import Header from "./header";
 import Footer from "./footer";
 
@@ -34,20 +33,15 @@ const Layout = ({ children }: LayoutProps) => {
           margin: `0 auto`,
           maxWidth: 1080,
           padding: `0 1.0875rem 1.45rem`,
-     
         }}
       >
         <MDXProvider components={components}>
-          <main className="">{children}</main>
+          <main>{children}</main>
         </MDXProvider>
       </div>
       <Footer />
     </>
   );
-};
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
 };
 
 export default Layout;
