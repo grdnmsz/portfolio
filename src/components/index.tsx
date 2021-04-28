@@ -5,6 +5,7 @@ import ExperienceCard from "./experienceCard";
 import Image from "./image";
 import IntroBio from "./introBio";
 import ArticleCard from "./articleCard";
+import ButtonLink from "./buttonLink";
 
 export {
   Layout,
@@ -13,5 +14,6 @@ export {
   ExperienceCard,
   Image,
   IntroBio,
-  ArticleCard
+  ArticleCard,
+  ButtonLink
 };
