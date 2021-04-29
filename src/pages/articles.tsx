@@ -19,10 +19,13 @@ const ArticlesPage = ({ data }: ArticlesPageProps): ReactElement => {
     <Layout>
       <SEO title="articles" />
       <main>
-        <h1>Articles</h1>
+        <h1>
+          Articles <span className="hand-writting-emoji">✍️</span>
+        </h1>
         <div className="text-lg mb-12">
           Here you will find notes and articles about my different experiments,
-          hacks and things that I learn on a day-to-day basis.
+          hacks and things that I learn on a day-to-day basis that I enjoy
+          sharing without any pretention.
         </div>
         {nodes.map((node, i) => {
           return <ArticleCard key={i} {...node} />;
@@ -42,7 +45,7 @@ const query = graphql`
         frontmatter {
           title
           description
-          date
+          category
         }
         fields {
           slug
