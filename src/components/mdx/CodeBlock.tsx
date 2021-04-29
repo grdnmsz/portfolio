@@ -1,6 +1,6 @@
 import React, { ReactElement } from "react";
 import Highlight, { defaultProps, Language } from "prism-react-renderer";
-import vsDark from "prism-react-renderer/themes/shadesOfPurple";
+import theme from "prism-react-renderer/themes/dracula";
 import CopyButton from "./copyButton";
 
 export type CodeBlockProps = {
@@ -12,7 +12,7 @@ const CodeBlock = ({ children, className }: CodeBlockProps): ReactElement => {
   const language = (className
     ? className.replace(/language-/, "")
     : "") as Language;
-  defaultProps.theme = vsDark;
+  defaultProps.theme = theme;
   return (
     <Highlight {...defaultProps} code={children} language={language}>
       {({ className, style, tokens, getLineProps, getTokenProps }) => (
@@ -22,7 +22,7 @@ const CodeBlock = ({ children, className }: CodeBlockProps): ReactElement => {
         >
           <div className="overflow-x-scroll ">
             {language ? (
-              <span className="absolute bg-orange-800 rounded-b pb-1 px-3 top-0">
+              <span className="absolute bg-orange-700 rounded-b pb-1 px-3 top-0">
                 {language}
               </span>
             ) : null}
