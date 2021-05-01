@@ -1,9 +1,9 @@
-const colors = require("tailwindcss/colors");
+const colors = require('tailwindcss/colors')
 
 module.exports = {
   purge: {
-    content: ["./src/**/*.{js,jsx,ts,tsx}"],
-    options: { safelist: ["pt-3"] },
+    content: ['./src/**/*.{js,jsx,ts,tsx}'],
+    options: { safelist: ['pt-3'] },
   },
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -14,23 +14,23 @@ module.exports = {
       purple: colors.purple,
       orange: colors.orange,
       cyan: colors.cyan,
-      headerColor: "#161c23",
-      backgroundColor: "#0e1218",
-      bgBlockQuote: "#21272c",
+      headerColor: '#161c23',
+      backgroundColor: '#0e1218',
+      bgBlockQuote: '#21272c',
     },
     extend: {
       keyframes: {
         fade: {
-          "0%": {
-            opacity: "0",
+          '0%': {
+            opacity: '0',
           },
-          "100%": {
-            opacity: "1",
+          '100%': {
+            opacity: '1',
           },
         },
       },
       animation: {
-        fade: "fade 1.5s ease-out",
+        fade: 'fade 1.5s ease-out',
       },
     },
   },
@@ -38,4 +38,4 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-};
+}

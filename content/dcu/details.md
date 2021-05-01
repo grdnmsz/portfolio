@@ -7,9 +7,12 @@ tag: details
 date: 2016-06
 jobTitle: Research Intern
 ---
+
 #### Tasks
-- In charge of porting a testbed running on Windows to Raspberry Pi. Rewrote several drivers for multimedia devices, synchronised for augmented reality video clips. 
+
+- In charge of porting a testbed running on Windows to Raspberry Pi. Rewrote several drivers for multimedia devices, synchronised for augmented reality video clips.
 
 #### Environment
+
 - C, C#, Shell
 - Raspberry Pi

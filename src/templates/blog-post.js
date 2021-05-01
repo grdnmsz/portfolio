@@ -1,12 +1,12 @@
-import * as React from "react";
-import { Link, graphql } from "gatsby";
-import { MDXRenderer } from "gatsby-plugin-mdx";
-import { Layout, SEO } from "../components";
+import * as React from 'react'
+import { Link, graphql } from 'gatsby'
+import { MDXRenderer } from 'gatsby-plugin-mdx'
+import { Layout, SEO } from '../components'
 
 const BlogPostTemplate = ({ data, location }) => {
-  const post = data.mdx;
-  const siteTitle = data.site.siteMetadata?.title || `Title`;
-  const { previous, next } = data;
+  const post = data.mdx
+  const siteTitle = data.site.siteMetadata?.title || `Title`
+  const { previous, next } = data
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -20,7 +20,10 @@ const BlogPostTemplate = ({ data, location }) => {
         itemType="http://schema.org/Article"
       >
         <header>
-          <h1 itemProp="headline" className="text-center md:mx-12 mt-12 text-2xl md:text-4xl">
+          <h1
+            itemProp="headline"
+            className="text-center md:mx-12 mt-12 text-2xl md:text-4xl"
+          >
             {post.frontmatter.title}
           </h1>
         </header>
@@ -54,10 +57,10 @@ const BlogPostTemplate = ({ data, location }) => {
         </ul>
       </nav>
     </Layout>
-  );
-};
+  )
+}
 
-export default BlogPostTemplate;
+export default BlogPostTemplate
 
 export const pageQuery = graphql`
   query BlogPostBySlug(
@@ -97,4 +100,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`
