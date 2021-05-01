@@ -21,10 +21,6 @@ type Props = {
   title: string
 }
 
-interface Site {
-  siteMetada: Props
-}
-
 function SEO({
   description = '',
   lang = 'en',
