@@ -1,32 +1,32 @@
-import React, { ReactElement } from "react";
-import { graphql, StaticQuery, PageProps } from "gatsby";
-import { Layout, SEO, ExperienceCard, IntroBio } from "../components";
-import { ExperienceCardProps } from "../components/experienceCard";
+import React, { ReactElement } from 'react'
+import { graphql, PageProps } from 'gatsby'
+import { Layout, SEO, ExperienceCard, IntroBio } from '../components'
+import { ExperienceCardProps } from '../components/experienceCard'
 
 interface allMdx<T> {
-  nodes: T[];
+  nodes: T[]
 }
 
 interface allFile {
   edges: {
     node: {
-      publicURL: string;
-    };
-  }[];
+      publicURL: string
+    }
+  }[]
 }
 
 type IndexpPageProps = PageProps & {
   data: {
-    allMdx: allMdx<ExperienceCardProps>;
-    allFile: allFile;
-  };
-};
+    allMdx: allMdx<ExperienceCardProps>
+    allFile: allFile
+  }
+}
 
 const IndexPage = ({
   data: { allMdx, allFile },
 }: IndexpPageProps): ReactElement => {
-  const { nodes } = allMdx;
-  const urlResume = allFile.edges[0].node.publicURL;
+  const { nodes } = allMdx
+  const urlResume = allFile.edges[0].node.publicURL
   return (
     <Layout>
       <SEO title="Home" />
@@ -35,22 +35,22 @@ const IndexPage = ({
           <div className="max-w-7xl mx-auto">
             <IntroBio urlResume={urlResume} />
             <h2 className="text-4xl sm:text-5xl text-center my-10 font-extrabold">
-              Where I've worked
+              Where I have worked
             </h2>
 
             <div className="grid lg:grid-cols-3 gap-8 m-5 max-w-5xl m-auto">
               {nodes.map((node, i) => {
-                return <ExperienceCard key={i} {...node} />;
+                return <ExperienceCard key={i} {...node} />
               })}
             </div>
           </div>
         </div>
       </main>
     </Layout>
-  );
-};
+  )
+}
 
-const query = graphql`
+export const query = graphql`
   query {
     allMdx(
       filter: { frontmatter: { tag: { eq: "card" } } }
@@ -73,13 +73,6 @@ const query = graphql`
       }
     }
   }
-`;
+`
 
-const staticQuery = (props: any) => (
-  <StaticQuery
-    query={query}
-    render={(data) => <IndexPage data={data} {...props} />}
-  />
-);
-
-export default staticQuery;
+export default IndexPage

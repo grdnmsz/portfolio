@@ -1,11 +1,11 @@
-import React from "react";
+import React, { ReactElement } from 'react'
 
 type Props = {
-  text: string;
-  uri: string;
-};
+  text: string
+  uri: string
+}
 
-const ButtonLink = ({ text, uri }: Props) => (
+const ButtonLink = ({ text, uri }: Props): ReactElement => (
   <div className="rounded shadow">
     <a
       href={uri}
@@ -14,6 +14,6 @@ const ButtonLink = ({ text, uri }: Props) => (
       {text}
     </a>
   </div>
-);
+)
 
-export default ButtonLink;
+export default ButtonLink

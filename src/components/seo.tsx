@@ -5,27 +5,32 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import React from "react";
-import { Helmet } from "react-helmet";
-import { useStaticQuery, graphql } from "gatsby";
+import React, { ReactElement } from 'react'
+import { Helmet } from 'react-helmet'
+import { useStaticQuery, graphql } from 'gatsby'
 
 interface MetaElement {
-  name: string;
-  content: string;
+  name: string
+  content: string
 }
 
 type Props = {
-  description?: string;
-  lang?: string;
-  meta?: Array<MetaElement>;
-  title: string;
-};
-
-interface Site {
-  siteMetada: Props;
+  description?: string
+  lang?: string
+  meta?: Array<MetaElement>
+  title: string
 }
 
-function SEO({ description='', lang='en', meta=[], title }: Props) {
+interface Site {
+  siteMetada: Props
+}
+
+function SEO({
+  description = '',
+  lang = 'en',
+  meta = [],
+  title,
+}: Props): ReactElement {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -38,10 +43,10 @@ function SEO({ description='', lang='en', meta=[], title }: Props) {
         }
       }
     `
-  );
+  )
 
-  const metaDescription = description || site.siteMetadata.description;
-  const defaultTitle = site.siteMetadata?.title;
+  const metaDescription = description || site.siteMetadata.description
+  const defaultTitle = site.siteMetadata?.title
   const metaData = [
     {
       name: `description`,
@@ -75,7 +80,7 @@ function SEO({ description='', lang='en', meta=[], title }: Props) {
       name: `twitter:description`,
       content: metaDescription,
     },
-  ].concat(meta || []);
+  ].concat(meta || [])
 
   return (
     <Helmet
@@ -86,7 +91,7 @@ function SEO({ description='', lang='en', meta=[], title }: Props) {
       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : undefined}
       meta={metaData}
     />
-  );
+  )
 }
 
-export default SEO;
+export default SEO

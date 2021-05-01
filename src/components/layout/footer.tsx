@@ -1,6 +1,6 @@
-import React from "react";
+import React, { ReactElement } from 'react'
 
-const footer = () => {
+const footer = (): ReactElement => {
   return (
     <footer className="bg-backgroundColor lg:px-8 px-6 py-12 text-gray-300">
       <div className="flex flex-col items-center max-w-screen-xl mx-auto">
@@ -49,7 +49,7 @@ const footer = () => {
               <path d="M32 0C14.4 0 0 14.4 0 32s14.4 32 32 32 32-14.4 32-32S49.6 0 32 0zM14.17 49.83c-4.8-4.8-7.314-11.2-7.314-17.37L31.77 57.143c-6.4-.23-12.8-2.514-17.6-7.314zm23.314 6.63L7.543 26.514C10.057 15.314 20.114 6.857 32 6.857c8.457 0 15.77 4.114 20.343 10.286l-3.43 2.97C45.03 14.857 38.857 11.43 32 11.43c-8.914 0-16.457 5.714-19.43 13.714L38.857 51.43c6.63-2.286 11.657-8 13.257-14.857h-10.97V32h16c0 11.886-8.457 21.943-19.657 24.457z" />
             </svg>
           </a>
-          <div>{" & "}</div>
+          <div>{' & '}</div>
           <a href="https://tailwindcss.com" className="hover:text-cyan-400">
             <span className="sr-only">Tailwindcss homepage</span>
             <svg
@@ -64,7 +64,7 @@ const footer = () => {
         </div>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default footer;
+export default footer

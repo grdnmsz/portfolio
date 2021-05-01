@@ -1,20 +1,20 @@
-import React, { ReactElement } from "react";
-import { graphql, StaticQuery, PageProps } from "gatsby";
-import { Layout, SEO, ExperienceDetails } from "../components";
-import { ExperienceDetailsProps } from "../components/experienceDetails";
+import React, { ReactElement } from 'react'
+import { graphql, PageProps } from 'gatsby'
+import { Layout, SEO, ExperienceDetails } from '../components'
+import { ExperienceDetailsProps } from '../components/experienceDetails'
 
 interface allMdx<T> {
-  nodes: T[];
+  nodes: T[]
 }
 
 type AboutPageProps = PageProps & {
   data: {
-    allMdx: allMdx<ExperienceDetailsProps>;
-  };
-};
+    allMdx: allMdx<ExperienceDetailsProps>
+  }
+}
 
-const About = ({ data }: AboutPageProps): ReactElement => {
-  const { nodes } = data.allMdx;
+const AboutPage = ({ data }: AboutPageProps): ReactElement => {
+  const { nodes } = data.allMdx
   return (
     <Layout>
       <SEO title="About me" />
@@ -40,16 +40,16 @@ const About = ({ data }: AboutPageProps): ReactElement => {
         <div className="mt-10">
           <div className="space-y-16 md:space-y-0 md:grid md:grid-cols-4 md:gap-y-16">
             {nodes.map((node, i) => {
-              return <ExperienceDetails key={i} {...node} />;
+              return <ExperienceDetails key={i} {...node} />
             })}
           </div>
         </div>
       </div>
     </Layout>
-  );
-};
+  )
+}
 
-const query = graphql`
+export const pageQuery = graphql`
   query {
     allMdx(
       filter: { frontmatter: { tag: { eq: "details" } } }
@@ -67,13 +67,5 @@ const query = graphql`
       }
     }
   }
-`;
-
-const staticQuery = (props: any) => (
-  <StaticQuery
-    query={query}
-    render={(data) => <About data={data} {...props} />}
-  />
-);
-
-export default staticQuery;
+`
+export default AboutPage
