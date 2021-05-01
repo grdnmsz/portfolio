@@ -1,4 +1,9 @@
 # Personal portfolio/blog
+<p align="center">
+  <img src="https://img.shields.io/website-up-down-green-red/https/gordonmes.dev.svg?label=gordonmes.dev" alt="up-down-badge"/>
+  <img src="https://img.shields.io/github/license/grdnmsz/portfolio" alt="license-badge">
+  <img src="https://img.shields.io/github/repo-size/grdnmsz/portfolio" alt="repo-size-badge">
+</p>
 
 ## Installation
 
