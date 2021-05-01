@@ -21,6 +21,7 @@ const components = {
   blockquote: DesignSystem.blockquote,
   code: DesignSystem.code,
   p: DesignSystem.p,
+  a: DesignSystem.a,
   subtitles: DesignSystem.subtitles,
 }
 

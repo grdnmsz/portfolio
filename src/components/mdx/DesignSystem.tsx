@@ -2,8 +2,10 @@ import React, { ReactElement, ReactPropTypes } from 'react'
 import CodeBlock, { CodeBlockProps } from './CodeBlock'
 
 const inlineCode = (props: ReactPropTypes): ReactElement => (
-  <code {...props} className="bg-gray-700 p-1 rounded" />
+  <code {...props} className="bg-gray-700 p-1 rounded text-sm" />
 )
+
+const a = (props: ReactPropTypes): ReactElement => <a {...props} className="text-orange-200" />
 
 const p = (props: ReactPropTypes): ReactElement => (
   <p {...props} className="md:text-base" />
@@ -27,4 +29,4 @@ const subtitles = (props: ReactPropTypes): ReactElement => (
   </>
 )
 
-export { inlineCode, blockquote, code, subtitles, p }
+export { inlineCode, blockquote, code, subtitles, p, a }
