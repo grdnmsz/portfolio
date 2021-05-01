@@ -78,7 +78,7 @@ const Header = (): ReactElement => {
                   className="py-2 text-sm font-medium"
                   activeClassName="bg-border-900 border-b block text-sm font-medium"
                 >
-                  Articles (WIP)
+                  Articles
                 </Link>
               </div>
             </div>
