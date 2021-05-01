@@ -21,7 +21,7 @@ const BlogPostTemplate = ({ data, location }) => {
         <header>
           <h1
             itemProp="headline"
-            className="text-center md:mx-12 mt-12 text-2xl md:text-4xl"
+            className="text-center md:mx-12 mt-12 text-3xl md:text-4xl"
           >
             {post.frontmatter.title}
           </h1>
