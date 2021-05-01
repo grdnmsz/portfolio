@@ -109,7 +109,7 @@ const Header = (): ReactElement => {
             className="px-3 py-2 block rounded text-sm font-medium"
             activeClassName="bg-backgroundColor px-3 py-2 block rounded text-sm font-medium"
           >
-            Articles (WIP)
+            Articles
           </Link>
         </div>
       </div>
