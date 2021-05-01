@@ -1,21 +1,21 @@
-import React, { ReactElement } from "react";
-import { Link } from "gatsby";
+import React, { ReactElement } from 'react'
+import { Link } from 'gatsby'
 
 export type ArticleCardProps = {
   frontmatter: {
-    title: string;
-    description: string;
-    category: string;
-    date: string;
-  };
+    title: string
+    description: string
+    category: string
+    date: string
+  }
   fields: {
-    slug: string;
-  };
-};
+    slug: string
+  }
+}
 
 const ArticleCard = (props: ArticleCardProps): ReactElement => {
-  const { title, description, category, date } = props.frontmatter;
-  const { slug } = props.fields;
+  const { title, description, category, date } = props.frontmatter
+  const { slug } = props.fields
   return (
     <div className="max-w-lg my-20 ">
       <div className="bg-orange-700 max-w-max mb-2 px-4 py-1 rounded-2xl text-xs">
@@ -30,7 +30,7 @@ const ArticleCard = (props: ArticleCardProps): ReactElement => {
         <span className="absolute right-0 text-xs sm:text-base">🗓️ {date}</span>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ArticleCard;
+export default ArticleCard

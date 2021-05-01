@@ -5,16 +5,16 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import React, { ReactNode } from "react";
-import Header from "./header";
-import Footer from "./footer";
+import React, { ReactNode, ReactElement } from 'react'
+import Header from './header'
+import Footer from './footer'
 
-import { MDXProvider } from "@mdx-js/react";
-import * as DesignSystem from "../mdx/DesignSystem";
+import { MDXProvider } from '@mdx-js/react'
+import * as DesignSystem from '../mdx/DesignSystem'
 
 type LayoutProps = {
-  children?: ReactNode;
-};
+  children?: ReactNode
+}
 
 const components = {
   inlineCode: DesignSystem.inlineCode,
@@ -22,9 +22,9 @@ const components = {
   code: DesignSystem.code,
   p: DesignSystem.p,
   subtitles: DesignSystem.subtitles,
-};
+}
 
-const Layout = ({ children }: LayoutProps) => {
+const Layout = ({ children }: LayoutProps): ReactElement => {
   return (
     <>
       <Header />
@@ -41,7 +41,7 @@ const Layout = ({ children }: LayoutProps) => {
       </div>
       <Footer />
     </>
-  );
-};
+  )
+}
 
-export default Layout;
+export default Layout
