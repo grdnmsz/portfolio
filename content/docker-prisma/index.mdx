@@ -1,5 +1,5 @@
 ---
-title: Set up a Nodejs, Prisma and PostgreSQL backend environment with Docker
+title: Set up a Prisma and PostgreSQL back-end environment with Docker and Typescript
 description: 'This article is meant to explain how to quickly set up from strach a Nodejs application running with Prisma and PostgreSQL in a Docker environment, using docker-compose.'
 tag: 'article'
 category: 'Web / Back-End'
@@ -18,9 +18,10 @@ The documentation is very clear, whether you have your project running with Type
 as for myself and also for potential beginners, a little guide to set it all up through docker.
 
 <br />
-At this end of this guide, you should be able to have your complete back-end environment
-(nodejs/expressjs, typescript, postgresql, prisma) running into a container. Sources
-are available on my github as well, feel free to use it!.
+
+At this end of this guide, you should have your complete back-end environment
+(nodejs/expressjs, typescript, postgresql, prisma) running into a container. [Sources](https://github.com/grdnmsz/prisma-docker)
+are available on my github as well, feel free to use it!
 
 - [Setting up the nodejs server](#setting-up-the-nodejs-server)
 - [Adding our database](#adding-our-database)
@@ -29,8 +30,7 @@ are available on my github as well, feel free to use it!.
 - [Conclusion](#conclusion)
 
 
-
-> There is obviously some requirements to follow this guide: you need to have **npm, node, docker and docker-compose** installed on your local machine, as well as some previous experience toying around with these tools.
+> Obviously, there are some requirements to follow this guide: you need to have **npm, node, docker and docker-compose** installed on your local machine, as well as some previous experience toying around with these tools.
 
 <br />
 
@@ -39,7 +39,7 @@ are available on my github as well, feel free to use it!.
 
 ## 💻 Set up the nodejs server
 
-We're gonna start a project from scratch, let's init it with `npm init -y`, add expressjs in the dependencies and
+Let's start a new project and initiate it with `npm init -y`, add expressjs in the dependencies and
 our dev dependencies for Typescript.
 
 ```bash
@@ -47,7 +47,7 @@ npm i express
 npm i -D nodemon ts-node typescript @types/express @types/node @types
 ```
 
-First we take care of our `tsconfig.json` file at the root of your project directory, you may have a different configuration but here's mine:
+First we take care of our `tsconfig.json` file at the root of our project directory, you may have a different configuration but here's mine:
 
 ```json
 {
@@ -63,7 +63,7 @@ First we take care of our `tsconfig.json` file at the root of your project direc
 }
 ```
 
-We are also using nodemon for the hot reload so we need to configure it for Typescript as well.
+We are also using nodemon for the hot reload, so we need to configure it for Typescript as well.
 At the root of your project, create a `nodemon.json` file with the following content:
 
 ```json
@@ -86,8 +86,8 @@ Add this line in the scripts of your `package.json` for the hot reload:
 }
 ```
 
-We're gonna keep it simple here and make a very basic server running, paste the following into a `server.ts` file
-in the `src` folder of your project.
+We're keeping it simple here and make a very basic server running, paste the following into a `server.ts` file
+into the `src` folder of your project.
 
 ```typescript
 // src/server.ts
@@ -108,7 +108,7 @@ app.listen(PORT, () => {
 ```
 
 If you made it up to this point, everything should be working like a charm 👌! You can of course test it by typing
-`npm run dev` and try to access our route in your browser.
+`npm run dev` and try to access the only route in browser.
 
 <br />
 <br />
@@ -117,14 +117,14 @@ If you made it up to this point, everything should be working like a charm 👌!
 
 ## 💻 Add our database
 
-Our server doesn't do a lot for sure, but it would be a first step to connect it to our PostgreSQL database. You may
-wonder why this choice over MySQL, but it won't be discussed here, there are plenty of resources on the Internet for you to find out!
+Our server doesn't do a lot for sure, but it would be nice to connect it to our PostgreSQL database. You may
+wonder why this choice over MySQL, but it won't be discussed here as there are plenty resources on the Internet for you to find out!
 
 <br />
 
 ### Dockerize the server
 
-First thing first, we have to write a Dockerfile for our server. We basically fetch a light version of node, install our
+First thing first, we have to write a Dockerfile for the server. We basically fetch a light version of node, install our
 dependencies in the working directory, then run the server.
 
 ```Dockerfile
@@ -144,10 +144,10 @@ CMD [ "npm", "run", "dev" ]
 
 ### Create a container for our database
 
-In order for both our server and database to be able to communicate within the same container, we use docker-compose,
-and write the following into our `docker-compose.yml` file where we define a very basic user and database name.
+In order for both our server and database to be able to communicate within the same container, we use docker-compose.
+Write the following into our `docker-compose.yml` file where we define a very basic user and database name.
 
-You are obviously more than welcome to expose different ports, or change this configuration in your projects.
+You are obviously more than welcome to expose different ports, or change this configuration as you wish.
 
 ```yml
 version: '3.9'
@@ -182,22 +182,22 @@ Just test your set up by simply running `docker-composer up -d` and you should s
 
 Okay now is the time to connect and send data to our database! For that we use an ORM called Prisma.
 I won't be talking about how cool this could be, or how it works (though hopefully I will write one day about it). The goal here
-is to get you all set up to code and that's what we're about to do!
+is to get you all set up for coding, and that's what we're about to do!
 
-- So let's install prisma in our dev dependencies by running `npm i -D prisma`
-- According to Prisma documentation we have to init prisma to add our schemas: `npx prisma init`
+- Let's install prisma in our dev dependencies by running `npm i -D prisma`
+- According to Prisma documentation we have to init prisma in order to add our schemas later: `npx prisma init`
 
 <br />
 
-That last command creates a repository (called prisma) at your root project containing the `prisma.schema`file.
-This is where we configure our provider (kind of databse), and the URL to connect it. Usually this URL is defined in the .env file of your project, but remember!
-We are working in a Docker container so our environement is already defined in our docker-compose file. We don't have anything else to do about it, yay.
+That last command creates a repository (called prisma) at your root project containing a `prisma.schema` file.
+This is where we configure our provider (kind of databse), and the url to connect it. Usually this url is defined in the .env file of your project, but remember (!)
+we are working in a Docker container so our environement is already defined in our docker-compose file. We don't have anything else to do about it, yay.
 
 <br />
 
 ### Create models
 
-This part is pretty straightforward too and for the sake of the example, we are just going to add
+This part is pretty straightforward too and for the sake of the example, we just add
 a simple user (with an email, a password and a name) as our only model:
 
 ```
@@ -219,8 +219,8 @@ through `npm install @prisma/client`.
 
 ### Seed the databse
 
-For those of you who might want to get started with a non-empty database, there is a simple way to do that consists in
-creating `prisma/seed.ts` file. And add the following example:
+For those of you who might want to get started with a non-empty database, there is a simple way to do that consisting in
+creating a `prisma/seed.ts` file. And add the following example:
 
 ```typescript
 // prisma/seed.ts
@@ -259,17 +259,15 @@ main()
 <div id="testing-it-all" />
 
 ## 💻 Test it all! 
-Before doing anything more, delete the previous container and node image, update some files and rebuild our images if needed.
+Before doing anything more, it is time to rebuild our image to make our changes effective (`docker build` for instance).
 
-Let's first update our `server.ts` and add a friendly route to retrieve our users:
+Let's then update our `server.ts` and add a friendly route to retrieve our users:
 ```typescript
 // src/server.ts
-
-const { PrismaClient } = require("@prisma/client"); // don't forget to include these two lines!
+import { PrismaClient } from '@prisma/client' // don't forget to include these two lines!
 const prisma = new PrismaClient();
 
 // […]
-
 app.get('/users', async (req, res) => {
   try { 
     const users = await prisma.user.findMany()
@@ -278,6 +276,7 @@ app.get('/users', async (req, res) => {
     console.log(err)
   }
 })
+// […]
 ```
 
 Now we update our **Dockerfile** and add (before our final CMD line) this prisma command: `RUN npx prisma generate` used for generating 
@@ -285,7 +284,7 @@ a version of Prisma Client *tailored* to our model, build and run our container 
 <br /> 
 
 ### Feed the dockerized database for real
-In order to feed our dockerized database and initiate prisma, first we enter our container and initialize it:
+In order to feed our dockerized database and initiate prisma, first we enter the shell of our container and initialize it:
 
 > 🧐 at the time I am writing this article, the current prisma version (2.21.2) is not compatible yet with the current last version (16) of nodejs. So you might want to downgrade and use `node:15-alpine` in your Dockerfile instead.
 
@@ -296,7 +295,7 @@ npx prisma migrate dev --name init && npx prisma db seed --preview-feature
 And that's it!
 
 You can now access your route `localhost:5000/users` and see the response by yourself. Keep in mind that it is totally normal
-to not have any `prisma/migrate` folder in your project directory, because this little boy is in your docker container.
+to not have any `prisma/migrate` folder in your project directory, because this little fella is in your docker container.
 
 <br /> 
 <br />
@@ -307,7 +306,13 @@ to not have any `prisma/migrate` folder in your project directory, because this 
 You should now be able to enjoy your time and code! As a quick reminder, we achieved the following:
 - Set up an Express (with Typescript !) and PostgreSQL servers on a Docker container
 - Add Prisma into the mix 
+<br />
 
 You can find the source code on my github repository: https://github.com/grdnmsz/prisma-docker
-
 This guide is meant to be quick and straightforward, please feel free to reach me out in you have any questions!
+
+<br />
+
+### Additionnal resources 
+- [Prisma documentation](https://www.prisma.io/docs/)
+- [Docker Compose documentation](https://docs.docker.com/compose/)
