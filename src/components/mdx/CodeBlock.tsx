@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react'
 import Highlight, { defaultProps, Language } from 'prism-react-renderer'
-import theme from 'prism-react-renderer/themes/dracula'
 import CopyButton from './copyButton'
+import theme from './preCodeTheme'
 
 export type CodeBlockProps = {
   children: string
@@ -17,8 +17,14 @@ const CodeBlock = ({ children, className }: CodeBlockProps): ReactElement => {
     <Highlight {...defaultProps} code={children} language={language}>
       {({ className, style, tokens, getLineProps, getTokenProps }) => (
         <pre
-          className={className + ' max-w-3xl my-10 rounded text-sm'}
-          style={{ ...style, padding: '20px', position: 'relative' }}
+          className={className + ' max-w-3xl my-10 rounded'}
+          style={{
+            ...style,
+            padding: '20px',
+            position: 'relative',
+            fontSize: '0.8rem',
+            lineHeight: '1.25rem',
+          }}
         >
           <div className="overflow-x-scroll ">
             {language ? (
