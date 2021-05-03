@@ -2,10 +2,10 @@
 
 exports[`Footer renders correctly 1`] = `
 <footer
-  className="bg-backgroundColor text-gray-300 px-6 lg:px-8 py-12"
+  className="bg-backgroundColor lg:px-8 px-6 py-12 text-gray-300"
 >
   <div
-    className="max-w-screen-xl mx-auto flex flex-col items-center "
+    className="flex flex-col items-center max-w-screen-xl mx-auto"
   >
     <div
       className="flex items-center space-x-2"
@@ -54,7 +54,7 @@ exports[`Footer renders correctly 1`] = `
       </a>
     </div>
     <div
-      className="text-sm mt-4 flex items-center space-x-1 "
+      className="flex items-center mt-4 space-x-1 text-sm"
     >
       <div>
         2021
