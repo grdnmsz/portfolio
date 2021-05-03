@@ -1,4 +1,13 @@
-# Personal portfolio/blog
+<h1 align="center">Personal portfolio/blog</h1>
+
+<p align="center">
+    <a href="#installation">Getting Started</a>
+    &nbsp; • &nbsp;
+    <a href="#license">License</a>
+    &nbsp; • &nbsp;
+    <a href="#tech-and-frameworks-used">Tech and frameworks used</a>
+</p>
+
 <p align="center">
   <img src="https://img.shields.io/website-up-down-green-red/https/gordonmes.dev.svg?label=gordonmes.dev" alt="up-down-badge"/>
   <img src="https://img.shields.io/github/license/grdnmsz/portfolio" alt="license-badge">
@@ -20,32 +29,54 @@ git clone https://github.com/grdnmsz/portfolio.git
 npm i
 ```
 
-## Run tests
+### Run tests
 
 Note : typescript files are not meant to be compiled in this project. Type-checking is fair enough for my use case.
 
-1. Type-checking :
+1. Lint:
+
+```bash
+npm run lint
+```
+
+2. Type:
 
 ```bash
 npm run type-check
 ```
 
+3. Unit, integration:
+
+```bash
+npm run test
+```
+
 ## How to run it
 
-1. Development mode:
+- Development mode:
 
 ```bash
 npm start
 ```
 
-2. Local build:
+- Local build:
 
 ```bash
 npm run build
 ```
 
-3. Serve a local build:
+- Serve a local build:
 
 ```bash
 npm run serve
 ```
+
+## License
+
+This project is under the [MIT license](https://github.com/grdnmsz/portfolio/blob/master/LICENSE).
+
+## Tech and frameworks used
+
+- [Gatsby](https://www.gatsbyjs.com/), an open source frontend framework for creating rich, optimized websites
+- [Tailwind CSS](https://tailwindcss.com/), a utility-first CSS framework made for building cool interfaces
+- Hosted on [Vercel](https://vercel.com), an all-in-one static and jamstack deployment, with global CDN
