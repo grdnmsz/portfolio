@@ -1,7 +1,9 @@
 <h1 align="center">Personal portfolio/blog</h1>
 
 <p align="center">
-    <a href="#installation">Getting Started</a>
+    <a href="#installation">Installation</a>
+    &nbsp; • &nbsp;
+    <a href="#how-to-run-it">How to run it</a>
     &nbsp; • &nbsp;
     <a href="#license">License</a>
     &nbsp; • &nbsp;
