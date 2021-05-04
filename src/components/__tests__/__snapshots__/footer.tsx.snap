@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Footer should renders correctly 1`] = `
+exports[`Footer should render correctly 1`] = `
 <footer
   className="bg-backgroundColor lg:px-8 px-6 py-12 text-gray-300"
 >

@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CopyButton should render correctly 1`] = `
+<button
+  className="absolute rounded hover:bg-orange-700 px-2 py-1 right-1 top-1"
+  onClick={[Function]}
+>
+  Copy
+</button>
+`;

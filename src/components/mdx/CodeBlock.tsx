@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react'
 import Highlight, { defaultProps, Language } from 'prism-react-renderer'
-import CopyButton from './copyButton'
+import { CopyButton } from '../'
 import theme from './preCodeTheme'
 
 export type CodeBlockProps = {
