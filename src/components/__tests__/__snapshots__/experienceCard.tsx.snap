@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ExperienceCard should renders correctly 1`] = `
+<div
+  className="bg-headerColor rounded"
+>
+  <div
+    className="mb-1 px-6 py-6 text-center"
+  >
+    <div
+      className="mb-4 font-bold hover:text-teal-600 text-2xl"
+    >
+      <a
+        className="flex justify-center w-full"
+        href="/about"
+      >
+        a title
+      </a>
+    </div>
+    <span
+      className="text-sm"
+    >
+      10-10-2020
+      <br />
+      some place
+      <br />
+      <br />
+    </span>
+    <div
+      className="md:px-52 lg:px-0 sm:px-32 text-sm"
+    >
+      some description to fill the gaps
+    </div>
+  </div>
+</div>
+`;

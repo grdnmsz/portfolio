@@ -1,18 +1,17 @@
 import { Link } from 'gatsby'
-import { MDXRenderer } from 'gatsby-plugin-mdx'
 import React, { ReactElement } from 'react'
 
 export type ExperienceCardProps = {
-  body: any
   frontmatter: {
     title: string
     dates: string
     location: string
+    description: string
   }
 }
 
 const ExperienceCard = (node: ExperienceCardProps): ReactElement => {
-  const { title, dates, location } = node.frontmatter
+  const { title, dates, location, description } = node.frontmatter
   return (
     <div className="bg-headerColor rounded">
       <div className="mb-1 px-6 py-6 text-center">
@@ -29,7 +28,7 @@ const ExperienceCard = (node: ExperienceCardProps): ReactElement => {
           <br />
         </span>
         <div className="md:px-52 lg:px-0 sm:px-32 text-sm">
-          <MDXRenderer>{node.body}</MDXRenderer>
+          {description}
         </div>
       </div>
     </div>
