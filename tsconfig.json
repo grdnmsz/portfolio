@@ -1,6 +1,6 @@
 {
   "include": ["./src/**/*"],
-  "exclude": ["./node_modules"],
+  "exclude": ["./node_modules", "public", ".cache", "src/**/*.js", "src/**/*.jsx"],
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",

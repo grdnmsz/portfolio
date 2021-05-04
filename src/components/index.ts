@@ -1,4 +1,6 @@
-import Layout from './layout'
+import Layout from './layout/layout'
+import Header from './layout/header'
+import Footer from './layout/footer'
 import SEO from './seo'
 import ExperienceDetails from './experienceDetails'
 import ExperienceCard from './experienceCard'
@@ -9,6 +11,8 @@ import ButtonLink from './buttonLink'
 
 export {
   Layout,
+  Footer,
+  Header,
   SEO,
   ExperienceDetails,
   ExperienceCard,
