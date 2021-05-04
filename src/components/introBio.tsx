@@ -2,10 +2,10 @@ import React, { ReactElement } from 'react'
 import ButtonLink from './buttonLink'
 
 type Props = {
-  urlResume: string
+  urlResume?: string
 }
 
-const IntroBio = ({ urlResume }: Props): ReactElement => (
+const IntroBio = ({ urlResume = '/404' }: Props): ReactElement => (
   <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-26">
     <h1 className="text-4xl tracking-tight font-extrabold sm:text-5xl md:text-6xl">
       <span className="block animate-fade xl:inline">
