@@ -1,11 +1,11 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 
-import { Header } from '../'
+import { CopyButton } from '../'
 
-describe('Header', () => {
+describe('CopyButton', () => {
   it('should render correctly', () => {
-    const tree = renderer.create(<Header />).toJSON()
+    const tree = renderer.create(<CopyButton />).toJSON()
     expect(tree).toMatchSnapshot()
   })
 })

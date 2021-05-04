@@ -13,7 +13,7 @@ describe('ExperienceCard', () => {
     },
   }
 
-  it('should renders correctly', () => {
+  it('should render correctly', () => {
     const tree = renderer.create(<ExperienceCard {...props} />).toJSON()
     expect(tree).toMatchSnapshot()
   })

@@ -6,10 +6,9 @@
  */
 
 import React, { ReactNode, ReactElement } from 'react'
-import Header from './header'
-import Footer from './footer'
-
 import { MDXProvider } from '@mdx-js/react'
+
+import { Header, Footer } from '../'
 import * as DesignSystem from '../mdx/DesignSystem'
 
 type LayoutProps = {
