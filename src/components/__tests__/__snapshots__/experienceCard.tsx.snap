@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ExperienceCard should renders correctly 1`] = `
+exports[`ExperienceCard should render correctly 1`] = `
 <div
   className="bg-headerColor rounded"
 >

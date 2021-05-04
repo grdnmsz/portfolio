@@ -1,10 +1,10 @@
 import React, { useState, ReactElement } from 'react'
 
 type CopyButtonProps = {
-  toCopy: string
+  toCopy?: string
 }
 
-const CopyButton = ({ toCopy }: CopyButtonProps): ReactElement => {
+const CopyButton = ({ toCopy = '' }: CopyButtonProps): ReactElement => {
   const [isCopied, setIsCopied] = useState(false)
 
   return (

@@ -8,6 +8,8 @@ import Image from './image'
 import IntroBio from './introBio'
 import ArticleCard from './articleCard'
 import ButtonLink from './buttonLink'
+import CopyButton from './mdx/copyButton'
+import * as DesignSystem from './mdx/DesignSystem'
 
 export {
   Layout,
@@ -20,4 +22,6 @@ export {
   IntroBio,
   ArticleCard,
   ButtonLink,
+  CopyButton,
+  DesignSystem
 }

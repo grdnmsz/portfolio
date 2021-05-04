@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticleCard should render correctly 1`] = `
+<div
+  className="max-w-lg my-20 "
+>
+  <div
+    className="bg-orange-700 max-w-max mb-2 px-4 py-1 rounded-2xl text-xs"
+  >
+    web / foo
+  </div>
+  <h3
+    className="sm:text-2xl text-xl"
+  >
+    a-title
+  </h3>
+  <div
+    className="text-gray-500 italic"
+  >
+    some description to fill the gaps
+  </div>
+  <div
+    className="flex items-end relative"
+  >
+    <div
+      className="border hover:text-teal-700 hover:border-teal-700 max-w-max mt-2 p-2 rounded"
+    >
+      <a
+        href="#a-title"
+      >
+        Read article 
+      </a>
+    </div>
+    <span
+      className="absolute right-0 text-xs sm:text-base"
+    >
+      🗓️ 
+      10-10-2020
+    </span>
+  </div>
+</div>
+`;

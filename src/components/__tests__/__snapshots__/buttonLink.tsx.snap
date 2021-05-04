@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer should render correctly 1`] = `
+<div
+  className="rounded shadow"
+>
+  <a
+    className="w-full flex items-center justify-center px-8 py-3 text-base font-medium rounded bg-headerColor hover:bg-teal-700 md:py-4 md:text-lg md:px-10"
+    href="/path"
+  >
+    clic
+  </a>
+</div>
+`;
