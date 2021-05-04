@@ -3,7 +3,7 @@ import renderer from 'react-test-renderer'
 
 import { ButtonLink } from '../'
 
-describe('Footer', () => {
+describe('ButtonLink', () => {
   const props = {
     uri: '/path',
     text: 'clic',
