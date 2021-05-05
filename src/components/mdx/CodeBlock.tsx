@@ -22,7 +22,7 @@ const CodeBlock = ({ children, className }: CodeBlockProps): ReactElement => {
             ...style,
             padding: '20px',
             position: 'relative',
-            fontSize: '0.8rem',
+            fontSize: '0.82rem',
             lineHeight: '1.25rem',
           }}
         >
