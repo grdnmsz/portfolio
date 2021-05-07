@@ -1,56 +1,41 @@
 {
-  "timestamp": 1620411935035,
+  "timestamp": 1620429484081,
   "hash": "d2ef7668a53ff3f14951706753420d7f",
   "assets": {
-    "/hello-world/": {
-      "https://fonts.gstatic.com/s/playfairdisplay/v22/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKfFunDXbtXK-F2qC0s.woff": true,
-      "https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHjx4wXiWtFCc.woff2": true,
-      "https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh50XSwiPGQ3q5d0.woff2": true
-    },
-    "/lms/": {
-      "https://fonts.gstatic.com/s/playfairdisplay/v22/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKfFunDXbtXK-F2qC0s.woff": true,
-      "https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHjx4wXiWtFCc.woff2": true,
-      "https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh50XSwiPGQ3q5d0.woff2": true
-    },
-    "/setup_raspberry/": {
-      "https://fonts.gstatic.com/s/playfairdisplay/v22/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKfFunDXbtXK-F2qC0s.woff": true,
-      "https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHjx4wXiWtFCc.woff2": true,
-      "https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh50XSwiPGQ3q5d0.woff2": true
+    "/docker-prisma/": {
+      "/static/lato-latin-400-normal-65e877e527022735c1a1bf5ae6183cf6.woff2": true,
+      "/static/playfair-display-latin-800-normal-c745c85d9a0db695f04f8f6d74c6e4f0.woff2": true,
+      "/static/lato-latin-900-normal-f33015cf2124b2046860d524d73bb84a.woff2": true
     },
     "/dev-404-page/": {
-      "https://fonts.gstatic.com/s/playfairdisplay/v22/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKfFunDXbtXK-F2qC0s.woff": true,
-      "https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHjx4wXiWtFCc.woff2": true,
-      "https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh50XSwiPGQ3q5d0.woff2": true
+      "/static/playfair-display-latin-800-normal-c745c85d9a0db695f04f8f6d74c6e4f0.woff2": true,
+      "/static/lato-latin-400-normal-65e877e527022735c1a1bf5ae6183cf6.woff2": true,
+      "/static/lato-latin-900-normal-f33015cf2124b2046860d524d73bb84a.woff2": true
     },
     "/404/": {
-      "https://fonts.gstatic.com/s/playfairdisplay/v22/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKfFunDXbtXK-F2qC0s.woff": true,
-      "https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHjx4wXiWtFCc.woff2": true,
-      "https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh50XSwiPGQ3q5d0.woff2": true
+      "/static/lato-latin-400-normal-65e877e527022735c1a1bf5ae6183cf6.woff2": true,
+      "/static/playfair-display-latin-800-normal-c745c85d9a0db695f04f8f6d74c6e4f0.woff2": true,
+      "/static/lato-latin-900-normal-f33015cf2124b2046860d524d73bb84a.woff2": true
     },
     "/about/": {
-      "https://fonts.gstatic.com/s/playfairdisplay/v22/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKfFunDXbtXK-F2qC0s.woff": true,
-      "https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHjx4wXiWtFCc.woff2": true,
-      "https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh50XSwiPGQ3q5d0.woff2": true
-    },
-    "/": {
-      "https://fonts.gstatic.com/s/playfairdisplay/v22/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKfFunDXbtXK-F2qC0s.woff": true,
-      "https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHjx4wXiWtFCc.woff2": true,
-      "https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh50XSwiPGQ3q5d0.woff2": true
-    },
-    "/docker-prisma/": {
-      "https://fonts.gstatic.com/s/playfairdisplay/v22/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKfFunDXbtXK-F2qC0s.woff": true,
-      "https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHjx4wXiWtFCc.woff2": true,
-      "https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh50XSwiPGQ3q5d0.woff2": true
+      "/static/lato-latin-400-normal-65e877e527022735c1a1bf5ae6183cf6.woff2": true,
+      "/static/playfair-display-latin-800-normal-c745c85d9a0db695f04f8f6d74c6e4f0.woff2": true,
+      "/static/lato-latin-900-normal-f33015cf2124b2046860d524d73bb84a.woff2": true
     },
     "/articles/": {
-      "https://fonts.gstatic.com/s/playfairdisplay/v22/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKfFunDXbtXK-F2qC0s.woff": true,
-      "https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHjx4wXiWtFCc.woff2": true,
-      "https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh50XSwiPGQ3q5d0.woff2": true
+      "/static/lato-latin-400-normal-65e877e527022735c1a1bf5ae6183cf6.woff2": true,
+      "/static/playfair-display-latin-800-normal-c745c85d9a0db695f04f8f6d74c6e4f0.woff2": true,
+      "/static/lato-latin-900-normal-f33015cf2124b2046860d524d73bb84a.woff2": true
+    },
+    "/": {
+      "/static/lato-latin-400-normal-65e877e527022735c1a1bf5ae6183cf6.woff2": true,
+      "/static/lato-latin-900-normal-f33015cf2124b2046860d524d73bb84a.woff2": true,
+      "/static/playfair-display-latin-800-normal-c745c85d9a0db695f04f8f6d74c6e4f0.woff2": true
     },
     "/404.html": {
-      "https://fonts.gstatic.com/s/playfairdisplay/v22/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKfFunDXbtXK-F2qC0s.woff": true,
-      "https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHjx4wXiWtFCc.woff2": true,
-      "https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh50XSwiPGQ3q5d0.woff2": true
+      "/static/lato-latin-400-normal-65e877e527022735c1a1bf5ae6183cf6.woff2": true,
+      "/static/playfair-display-latin-800-normal-c745c85d9a0db695f04f8f6d74c6e4f0.woff2": true,
+      "/static/lato-latin-900-normal-f33015cf2124b2046860d524d73bb84a.woff2": true
     }
   }
 }
