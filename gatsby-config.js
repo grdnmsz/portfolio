@@ -10,7 +10,10 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-postcss`,
-    `gatsby-plugin-preload-fonts`,
+    {
+      resolve: `gatsby-plugin-preload-fonts`,
+      options: { crossOrigin: 'anonymous' },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
