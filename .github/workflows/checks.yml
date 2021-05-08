@@ -1,0 +1,29 @@
+name: Checks
+
+on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  checks:
+    name: Presubmit checks
+    runs-on: ubuntu-latest
+    
+    steps:
+        # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+        - uses: actions/checkout@v2
+
+        - name: Linter check (eslint)
+          run: npm run lint
+        
+        - name: Type check (typescript)
+          run: npm run type-check
+        
+        - name: Unit tests (jest)
+          run: npm run test
+        
+        - name: Build project #build might fail before merging
+          run: npm run build
