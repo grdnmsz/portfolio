@@ -21,7 +21,7 @@
     "gatsby-plugin-react-helmet": "^4.0.0",
     "gatsby-plugin-sharp": "^3.0.0",
     "gatsby-remark-classes": "^1.0.0",
-    "gatsby-remark-images": "^4.1.0",
+    "gatsby-remark-images": "^5.0.0",
     "gatsby-source-filesystem": "^3.0.0",
     "gatsby-transformer-sharp": "^3.0.0",
     "postcss": "^8.2.15",
