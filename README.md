@@ -14,7 +14,7 @@
   <img src="https://github.com/grdnmsz/portfolio/actions/workflows/checks.yml/badge.svg" alt="presubmit-checks" />
   <img src="https://img.shields.io/website-up-down-green-red/https/gordonmes.dev.svg?label=gordonmes.dev" alt="up-down-badge"/>
   <img src="https://img.shields.io/github/license/grdnmsz/portfolio" alt="license-badge">
-  <img src="https://img.shields.io/github/repo-size/grdnmsz/portfolio" alt="repo-size-badge">
+  [![Depfu](https://badges.depfu.com/badges/cd7c0211dda141c2ffb2658d1e9c5d9c/count.svg)](https://depfu.com/github/grdnmsz/portfolio?project_id=25962)
 </p>
 
 ## Installation
