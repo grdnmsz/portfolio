@@ -24,6 +24,7 @@
     "gatsby-remark-images": "^5.2.0",
     "gatsby-source-filesystem": "^3.5.0",
     "gatsby-transformer-sharp": "^3.5.0",
+    "hamburger-react": "^2.4.1",
     "postcss": "^8.2.15",
     "prism-react-renderer": "^1.2.0",
     "prop-types": "^15.7.2",

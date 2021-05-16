@@ -11,51 +11,6 @@ exports[`Header should render correctly 1`] = `
       className="relative flex items-center justify-between h-16"
     >
       <div
-        className="absolute inset-y-0 left-0 flex items-center sm:hidden"
-      >
-        <button
-          aria-expanded="false"
-          className="inline-flex items-center justify-center p-2 rounded text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-          onClick={[Function]}
-        >
-          <span
-            className="sr-only"
-          >
-            Open main menu
-          </span>
-          <svg
-            aria-hidden="true"
-            className="block h-6 w-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M4 6h16M4 12h16M4 18h16"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-            />
-          </svg>
-          <svg
-            aria-hidden="true"
-            className="hidden h-6 w-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M6 18L18 6M6 6l12 12"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-            />
-          </svg>
-        </button>
-      </div>
-      <div
         className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start"
       >
         <div
@@ -84,7 +39,7 @@ exports[`Header should render correctly 1`] = `
             className="flex space-x-12"
           >
             <a
-              className="py-2 block text-sm font-medium"
+              className="py-2 text-sm font-medium"
               href="/"
             >
               Home
@@ -101,6 +56,98 @@ exports[`Header should render correctly 1`] = `
             >
               Articles
             </a>
+          </div>
+        </div>
+      </div>
+      <div
+        className="absolute inset-y-0 left-0 flex items-center sm:hidden"
+      >
+        <div
+          aria-label="hamburger menu"
+          className="hamburger-react"
+          onClick={[Function]}
+          onKeyUp={[Function]}
+          role="button"
+          style={
+            Object {
+              "cursor": "pointer",
+              "height": "48px",
+              "outline": "none",
+              "position": "relative",
+              "transition": "0.4s cubic-bezier(0, 0, 0, 1)",
+              "userSelect": "none",
+              "width": "48px",
+            }
+          }
+          tabIndex={0}
+        >
+          <div
+            style={
+              Object {
+                "transform": "none",
+                "transition": "0.2s cubic-bezier(0, 0, 0, 1) 0.2s",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "background": "currentColor",
+                  "height": "2px",
+                  "left": "14px",
+                  "position": "absolute",
+                  "top": "17px",
+                  "transform": "none",
+                  "transition": "0.2s cubic-bezier(0, 0, 0, 1) 0s",
+                  "width": "20px",
+                }
+              }
+            />
+          </div>
+          <div
+            style={
+              Object {
+                "opacity": "1",
+                "transition": "0.2s cubic-bezier(0, 0, 0, 1)",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "background": "currentColor",
+                  "height": "2px",
+                  "left": "14px",
+                  "position": "absolute",
+                  "top": "23px",
+                  "transition": "0.2s cubic-bezier(0, 0, 0, 1)",
+                  "width": "20px",
+                }
+              }
+            />
+          </div>
+          <div
+            style={
+              Object {
+                "transform": "none",
+                "transition": "0.2s cubic-bezier(0, 0, 0, 1) 0.2s",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "background": "currentColor",
+                  "height": "2px",
+                  "left": "14px",
+                  "position": "absolute",
+                  "top": "29px",
+                  "transform": "none",
+                  "transition": "0.2s cubic-bezier(0, 0, 0, 1) 0s",
+                  "width": "20px",
+                }
+              }
+            />
           </div>
         </div>
       </div>

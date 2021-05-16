@@ -1,6 +1,8 @@
 import Layout from './layout/layout'
 import Header from './layout/header'
 import Footer from './layout/footer'
+import NavLink from './layout/navLink'
+
 import SEO from './seo'
 import ExperienceDetails from './experienceDetails'
 import ExperienceCard from './experienceCard'
@@ -23,5 +25,6 @@ export {
   ArticleCard,
   ButtonLink,
   CopyButton,
-  DesignSystem
+  DesignSystem,
+  NavLink
 }
