@@ -15,6 +15,7 @@
   <img src="https://img.shields.io/website-up-down-green-red/https/gordonmes.dev.svg?label=gordonmes.dev" alt="up-down-badge"/>
   <img src="https://img.shields.io/github/license/grdnmsz/portfolio" alt="license-badge">
   <img src="https://badges.depfu.com/badges/cd7c0211dda141c2ffb2658d1e9c5d9c/count.svg" alt="deps-badge" />
+  <img src="https://api.codeclimate.com/v1/badges/ace1cdeba85dbc7f3b41/maintainability" alt="aintainability-badge"/>
 </p>
 
 These are the sources for my personal blog/portfolio. I have been maintaining and expanding it for a while now as I am hoping it could give guidances to developpers as the same goals as me!
