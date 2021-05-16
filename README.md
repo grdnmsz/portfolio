@@ -18,7 +18,7 @@
   <img src="https://api.codeclimate.com/v1/badges/ace1cdeba85dbc7f3b41/maintainability" alt="aintainability-badge"/>
 </p>
 
-These are the sources for my personal blog/portfolio. I have been maintaining and expanding it for a while now as I am hoping it could give guidances to developpers as the same goals as me!
+These are the sources for my personal blog/portfolio. I have been maintaining and expanding it for a while now as I hope it could give guidance to developpers as the same goals as me!
 
 ## Installation
 
