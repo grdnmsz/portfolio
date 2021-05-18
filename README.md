@@ -15,7 +15,7 @@
     <img src="https://github.com/grdnmsz/portfolio/actions/workflows/checks.yml/badge.svg" alt="presubmit-checks" />
   </a>
   
-  <a href="https//gordonmes.dev">
+  <a href="https://gordonmes.dev">
     <img src="https://img.shields.io/website-up-down-green-red/https/gordonmes.dev.svg?label=gordonmes.dev" alt="up-down-badge"/>
   </a>
 
