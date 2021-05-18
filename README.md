@@ -11,11 +11,25 @@
 </p>
 
 <p align="center">
-  <img src="https://github.com/grdnmsz/portfolio/actions/workflows/checks.yml/badge.svg" alt="presubmit-checks" />
-  <img src="https://img.shields.io/website-up-down-green-red/https/gordonmes.dev.svg?label=gordonmes.dev" alt="up-down-badge"/>
-  <img src="https://img.shields.io/github/license/grdnmsz/portfolio" alt="license-badge">
-  <img src="https://badges.depfu.com/badges/cd7c0211dda141c2ffb2658d1e9c5d9c/count.svg" alt="deps-badge" />
-  <img src="https://api.codeclimate.com/v1/badges/ace1cdeba85dbc7f3b41/maintainability" alt="aintainability-badge"/>
+  <a href="https://github.com/grdnmsz/portfolio/actions/workflows/checks.yml">
+    <img src="https://github.com/grdnmsz/portfolio/actions/workflows/checks.yml/badge.svg" alt="presubmit-checks" />
+  </a>
+  
+  <a href="https//gordonmes.dev">
+    <img src="https://img.shields.io/website-up-down-green-red/https/gordonmes.dev.svg?label=gordonmes.dev" alt="up-down-badge"/>
+  </a>
+
+  <a href="https://github.com/grdnmsz/portfolio/blob/master/LICENSE">
+    <img src="https://img.shields.io/github/license/grdnmsz/portfolio" alt="license-badge"> 
+  </a>
+  
+  <a href="https://depfu.com/github/grdnmsz/portfolio?project_id=25962">
+    <img src="https://badges.depfu.com/badges/cd7c0211dda141c2ffb2658d1e9c5d9c/count.svg" alt="deps-badge" />
+  </a>
+  
+  <a href="https://codeclimate.com/github/grdnmsz/portfolio/maintainability">
+    <img src="https://api.codeclimate.com/v1/badges/ace1cdeba85dbc7f3b41/maintainability" alt="aintainability-badge"/>
+  </a>
 </p>
 
 These are the sources for my personal blog/portfolio. I have been maintaining and expanding it for a while now as I hope it could give guidance to developpers who have the same goals as me!
