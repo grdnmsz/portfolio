@@ -2,7 +2,7 @@
 dates: Nov. 2017 - Oct. 2018
 location: Bordeaux, France
 company: InfleXsys
-url: https://inflexsys.com
+url: https://www.inflexsys.com
 tag: details
 date: 2017-11
 jobTitle: Software Engineer

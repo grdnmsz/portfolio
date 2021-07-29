@@ -25,7 +25,8 @@ const ExperienceDetails = (node: ExperienceDetailsProps): ReactElement => {
           <dt className="font-extrabold font-medium leading-6 text-lg">
             {company}
           </dt>
-          <dd className="mt-2 text-xs">{url}</dd>
+          <dd className="mt-2 text-xs hover:text-teal-100">
+            <a href={url}>{url}</a></dd>
           <dd className="py-1 text-sm">{dates}</dd>
           <dd className="text-sm">{location}</dd>
         </div>
