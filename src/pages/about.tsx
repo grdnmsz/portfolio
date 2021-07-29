@@ -29,9 +29,9 @@ const AboutPage = ({ data }: AboutPageProps): ReactElement => {
             fundamental sciences and applied research, to professional mobile
             development.
             <br />
-            <br />2 years ago, I took my focus off Computer Science to be more
+            <br />3 years ago, I took my focus off Computer Science to be more
             involved in creative projects such as music composition and
-            filmmaking. I’ve since been growing as a Full Stack Engineer with
+            filmmaking for a couple months. I’ve since been growing as a Full Stack Engineer with
             React and Node.js expertise, eager to take on challenging missions
             as well as to keep on improving my skills.
           </p>

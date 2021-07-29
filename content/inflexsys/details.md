@@ -10,7 +10,7 @@ jobTitle: Software Engineer
 
 #### Tasks
 
-- Developed new features and fixed critical bugs on our clients’ mobile applications such as Barclays/Milléis. Providing in-time delivery through continuous integration.
+- Developed new features and fixed critical bugs on our clients’ mobile applications. Providing in-time delivery through continuous integration.
 - Took part in R&D efforts on an IoT project designed to keep the disabled community away from dangerous situations. Was in charge of setting up the data collection infrastructure.
 
 #### Environment
