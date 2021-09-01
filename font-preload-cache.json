@@ -1,40 +1,39 @@
 {
-  "timestamp": 1620429484081,
-  "hash": "d2ef7668a53ff3f14951706753420d7f",
+  "timestamp": 1630525571702,
+  "hash": "cb22775eb2a5f94849b31329bcec86ac",
   "assets": {
     "/docker-prisma/": {
+      "/static/playfair-display-latin-800-normal-675785f8f6c56e1cdf3e7e05a044967a.woff2": true,
       "/static/lato-latin-400-normal-65e877e527022735c1a1bf5ae6183cf6.woff2": true,
-      "/static/playfair-display-latin-800-normal-c745c85d9a0db695f04f8f6d74c6e4f0.woff2": true,
       "/static/lato-latin-900-normal-f33015cf2124b2046860d524d73bb84a.woff2": true
     },
     "/dev-404-page/": {
-      "/static/playfair-display-latin-800-normal-c745c85d9a0db695f04f8f6d74c6e4f0.woff2": true,
+      "/static/playfair-display-latin-800-normal-675785f8f6c56e1cdf3e7e05a044967a.woff2": true,
       "/static/lato-latin-400-normal-65e877e527022735c1a1bf5ae6183cf6.woff2": true,
       "/static/lato-latin-900-normal-f33015cf2124b2046860d524d73bb84a.woff2": true
     },
-    "/404/": {
-      "/static/lato-latin-400-normal-65e877e527022735c1a1bf5ae6183cf6.woff2": true,
-      "/static/playfair-display-latin-800-normal-c745c85d9a0db695f04f8f6d74c6e4f0.woff2": true,
-      "/static/lato-latin-900-normal-f33015cf2124b2046860d524d73bb84a.woff2": true
-    },
-    "/about/": {
-      "/static/lato-latin-400-normal-65e877e527022735c1a1bf5ae6183cf6.woff2": true,
-      "/static/playfair-display-latin-800-normal-c745c85d9a0db695f04f8f6d74c6e4f0.woff2": true,
-      "/static/lato-latin-900-normal-f33015cf2124b2046860d524d73bb84a.woff2": true
-    },
-    "/articles/": {
-      "/static/lato-latin-400-normal-65e877e527022735c1a1bf5ae6183cf6.woff2": true,
-      "/static/playfair-display-latin-800-normal-c745c85d9a0db695f04f8f6d74c6e4f0.woff2": true,
-      "/static/lato-latin-900-normal-f33015cf2124b2046860d524d73bb84a.woff2": true
-    },
-    "/": {
+    "/404.html": {
       "/static/lato-latin-400-normal-65e877e527022735c1a1bf5ae6183cf6.woff2": true,
       "/static/lato-latin-900-normal-f33015cf2124b2046860d524d73bb84a.woff2": true,
       "/static/playfair-display-latin-800-normal-c745c85d9a0db695f04f8f6d74c6e4f0.woff2": true
     },
-    "/404.html": {
+    "/404/": {
       "/static/lato-latin-400-normal-65e877e527022735c1a1bf5ae6183cf6.woff2": true,
-      "/static/playfair-display-latin-800-normal-c745c85d9a0db695f04f8f6d74c6e4f0.woff2": true,
+      "/static/lato-latin-900-normal-f33015cf2124b2046860d524d73bb84a.woff2": true
+    },
+    "/about/": {
+      "/static/lato-latin-400-normal-65e877e527022735c1a1bf5ae6183cf6.woff2": true,
+      "/static/lato-latin-900-normal-f33015cf2124b2046860d524d73bb84a.woff2": true,
+      "/static/playfair-display-latin-800-normal-675785f8f6c56e1cdf3e7e05a044967a.woff2": true
+    },
+    "/articles/": {
+      "/static/lato-latin-400-normal-65e877e527022735c1a1bf5ae6183cf6.woff2": true,
+      "/static/playfair-display-latin-800-normal-675785f8f6c56e1cdf3e7e05a044967a.woff2": true,
+      "/static/lato-latin-900-normal-f33015cf2124b2046860d524d73bb84a.woff2": true
+    },
+    "/": {
+      "/static/lato-latin-400-normal-65e877e527022735c1a1bf5ae6183cf6.woff2": true,
+      "/static/playfair-display-latin-800-normal-675785f8f6c56e1cdf3e7e05a044967a.woff2": true,
       "/static/lato-latin-900-normal-f33015cf2124b2046860d524d73bb84a.woff2": true
     }
   }
