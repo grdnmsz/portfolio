@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { ReactElement } from 'react'
 
-const github = (
-  <a href="https://github.com/grdnmsz" className="hover:text-teal-100">
+type Props = {
+  url: string
+}
+
+const github = ({ url }: Props): ReactElement => (
+  <a href={url} className="hover:text-teal-100">
     <span className="sr-only">Personal Github profile</span>
     <svg
       className="h-6 w-6"
@@ -18,11 +22,8 @@ const github = (
   </a>
 )
 
-const linkedin = (
-  <a
-    href="https://www.linkedin.com/in/gordon-meszaros-530649114/"
-    className="hover:text-teal-100"
-  >
+const linkedin = ({ url }: Props): ReactElement => (
+  <a href={url} className="hover:text-teal-100">
     <span className="sr-only">Personal linkedin profile</span>
     <svg
       className="h-6 w-6"
