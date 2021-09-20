@@ -27,9 +27,7 @@ const ExperienceCard = (node: ExperienceCardProps): ReactElement => {
           <br />
           <br />
         </span>
-        <div className="md:px-52 lg:px-0 sm:px-32 text-sm">
-          {description}
-        </div>
+        <div className="md:px-52 lg:px-0 sm:px-32 text-sm">{description}</div>
       </div>
     </div>
   )
