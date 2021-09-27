@@ -9,7 +9,7 @@
     "@fontsource/playfair-display": "^4.5.0",
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
-    "autoprefixer": "^10.3.5",
+    "autoprefixer": "^10.3.6",
     "gatsby": "^3.14.0",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-google-gtag": "^3.14.0",
@@ -31,7 +31,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
-    "tailwindcss": "^2.2.15"
+    "tailwindcss": "^2.2.16"
   },
   "devDependencies": {
     "@types/jest": "^27.0.2",
