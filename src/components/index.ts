@@ -12,6 +12,7 @@ import ArticleCard from './articleCard'
 import ButtonLink from './buttonLink'
 import CopyButton from './mdx/copyButton'
 import * as DesignSystem from './mdx/DesignSystem'
+import TableOfContents from './tableOfContents'
 
 export {
   Layout,
@@ -26,5 +27,6 @@ export {
   ButtonLink,
   CopyButton,
   DesignSystem,
-  NavLink
+  NavLink,
+  TableOfContents
 }

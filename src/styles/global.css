@@ -45,3 +45,11 @@ ul {
   list-style-type: disc;
   margin-left: 25px;
 }
+
+a {
+  @apply hover:text-teal-100
+}
+
+a.anchor {
+  fill: #ced0d4;
+}

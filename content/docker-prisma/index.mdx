@@ -23,21 +23,13 @@ At this end of this guide, you should have your complete back-end environment
 (nodejs/expressjs, typescript, postgresql, prisma) running into a container. [Sources](https://github.com/grdnmsz/prisma-docker)
 are available on my github as well, feel free to use it!
 
-- [Setting up the nodejs server](#setting-up-the-nodejs-server)
-- [Adding our database](#adding-our-database)
-- [Connecting our database with Prisma](#connecting-our-database-with-prisma)
-- [Testing it all!](#testing-it-all)
-- [Conclusion](#conclusion)
-
-
 > Obviously, there are some requirements to follow this guide: you need to have **npm, node, docker and docker-compose** installed on your local machine, as well as some previous experience toying around with these tools.
 
 <br />
 
 <br />
-<div id="setting-up-the-nodejs-server" />
 
-## 💻 Set up the nodejs server
+## Set up the nodejs server
 
 Let's start a new project and initiate it with `npm init -y`, add expressjs in the dependencies and
 our dev dependencies for Typescript.
@@ -113,9 +105,8 @@ If you made it up to this point, everything should be working like a charm 👌!
 <br />
 <br />
 
-<div id="adding-our-database" />
 
-## 💻 Add our database
+## Add our database
 
 Our server doesn't do a lot for sure, but it would be nice to connect it to our PostgreSQL database. You may
 wonder why this choice over MySQL, but it won't be discussed here as there are plenty resources on the Internet for you to find out!
@@ -176,9 +167,8 @@ Just test your set up by simply running `docker-composer up -d` and you should s
 <br />
 <br />
 
-<div id="connecting-our-database-with-prisma" />
 
-## 💻 Connect our database with Prisma
+## Connect our database with Prisma
 
 Okay now is the time to connect and send data to our database! For that we use an ORM called Prisma.
 I won't be talking about how cool this could be, or how it works (though hopefully I will write one day about it). The goal here
@@ -256,9 +246,8 @@ main()
 ```
 <br /> 
 
-<div id="testing-it-all" />
 
-## 💻 Test it all! 
+## Test it all! 
 Before doing anything more, it is time to rebuild our image to make our changes effective (`docker build` for instance).
 
 Let's then update our `server.ts` and add a friendly route to retrieve our users:
@@ -300,9 +289,8 @@ to not have any `prisma/migrate` folder in your project directory, because this 
 <br /> 
 <br />
 
-<div id="conclusion" />
 
-## 💻 Conclusion
+## Conclusion
 You should now be able to enjoy your time and code! As a quick reminder, we achieved the following:
 - Set up an Express (with Typescript !) and PostgreSQL servers on a Docker container
 - Add Prisma into the mix 

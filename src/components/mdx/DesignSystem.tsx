@@ -5,7 +5,10 @@ const inlineCode = (props: ReactPropTypes): ReactElement => (
   <code {...props} className="bg-gray-700 p-1 rounded text-sm" />
 )
 
-const a = (props: ReactPropTypes): ReactElement => <a {...props} className="text-orange-200" />
+const a = (props: ReactPropTypes): ReactElement => {
+  console.log(props)
+  return <a {...props} className="text-teal-100 anchor after" />
+}
 
 const p = (props: ReactPropTypes): ReactElement => (
   <p {...props} className="md:text-base" />
