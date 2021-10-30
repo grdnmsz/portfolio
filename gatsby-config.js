@@ -58,6 +58,9 @@ module.exports = {
         // Plugins configs
         gatsbyRemarkPlugins: [
           {
+            resolve: `gatsby-remark-autolink-headers`,
+          },
+          {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 800,

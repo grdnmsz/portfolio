@@ -24,9 +24,11 @@ const ArticleCard = (props: ArticleCardProps): ReactElement => {
       <h3 className="sm:text-2xl text-xl">{title}</h3>
       <div className="text-gray-500 italic">{description}</div>
       <div className="flex items-end relative">
-        <div className="border hover:text-teal-700 hover:border-teal-700 max-w-max mt-2 p-2 rounded">
-          <Link to={slug}>Read article </Link>
-        </div>
+        <Link className="hover:text-teal-100" to={slug}>
+          <div className="border hover:text-teal-100 hover:border-teal-100 max-w-max mt-2 p-2 rounded">
+            Read article
+          </div>
+        </Link>
         <span className="absolute right-0 text-xs sm:text-base">🗓️ {date}</span>
       </div>
     </div>
