@@ -22,15 +22,16 @@ exports[`ArticleCard should render correctly 1`] = `
   <div
     className="flex items-end relative"
   >
-    <div
-      className="border hover:text-teal-700 hover:border-teal-700 max-w-max mt-2 p-2 rounded"
+    <a
+      className="hover:text-teal-100"
+      href="#a-title"
     >
-      <a
-        href="#a-title"
+      <div
+        className="border hover:text-teal-100 hover:border-teal-100 max-w-max mt-2 p-2 rounded"
       >
-        Read article 
-      </a>
-    </div>
+        Read article
+      </div>
+    </a>
     <span
       className="absolute right-0 text-xs sm:text-base"
     >
