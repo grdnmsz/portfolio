@@ -54,21 +54,23 @@ const getIdsFromItems = (items: Array<Items>) => {
 
 const useActiveId = (itemsIds: Array<string>) => {
   const [activeId, setActiveId] = useState('')
-  const observer = new IntersectionObserver(
-    entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) setActiveId(entry.target.id)
-      })
-    },
-    {
-      rootMargin: `0% 0% -90% 0%`,
-    }
-  )
 
   useEffect(() => {
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) setActiveId(entry.target.id)
+        })
+      },
+      {
+        rootMargin: `0% 0% -90% 0%`,
+      }
+    )
+
     itemsIds.forEach(id => {
       observer.observe(document.getElementById(id)!)
     })
+    
     return () => {
       itemsIds.forEach(id => {
         observer.unobserve(document.getElementById(id)!)
