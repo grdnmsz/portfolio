@@ -1,9 +1,8 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
-import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { Layout, SEO, TableOfContents } from '../components'
 
-const BlogPostTemplate = ({ data, location }) => {
+const BlogPostTemplate = ({ data, location, children}) => {
   const post = data.mdx
   const { items } = post.tableOfContents
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -28,7 +27,7 @@ const BlogPostTemplate = ({ data, location }) => {
           </h1>
         </header>
         <TableOfContents items={items} />
-        <MDXRenderer>{post.body}</MDXRenderer>
+        {children}
       </article>
     </Layout>
   )
@@ -37,7 +36,7 @@ const BlogPostTemplate = ({ data, location }) => {
 export default BlogPostTemplate
 
 export const pageQuery = graphql`
-  query BlogPostBySlug($id: String!) {
+  query ($id: String!) {
     site {
       siteMetadata {
         title
@@ -46,7 +45,6 @@ export const pageQuery = graphql`
     mdx(id: { eq: $id }) {
       id
       excerpt(pruneLength: 160)
-      body
       tableOfContents
       frontmatter {
         title
