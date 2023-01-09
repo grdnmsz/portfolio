@@ -21,6 +21,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             fields {
               slug
             }
+            internal {
+              contentFilePath
+            }
           }
         }
       }
@@ -45,7 +48,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     posts.forEach((post, index) => {
       createPage({
         path: post.fields.slug,
-        component: blogPost,
+        component: `${blogPost}?__contentFilePath=${post.internal.contentFilePath}`,
         context: {
           id: post.id,
         },
